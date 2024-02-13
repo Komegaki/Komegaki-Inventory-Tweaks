@@ -1,0 +1,5 @@
+You can use any assets included in this project as long as you follow the licensing and permissions of the original author(s)' of said assets.
+
+Any assets made solely by me are free to use for whatever, barring pay walling. Reasonable credits for my efforts are appreciated but not required.
+
+Contact me for questions or clarification.
