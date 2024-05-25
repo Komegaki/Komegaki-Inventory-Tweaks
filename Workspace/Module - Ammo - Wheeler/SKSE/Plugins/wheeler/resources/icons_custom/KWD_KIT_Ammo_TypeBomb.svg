@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="KIT_Ammo_TypeBomb.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1.1194155"
+     inkscape:cx="234.94404"
+     inkscape:cy="251.47052"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="235"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <path
+     id="path3"
+     style="fill:#a6aebd;stroke-width:0.887292"
+     d="m 129.68363,89.006094 8.21255,2.946722 6.61903,2.366445 0.98097,6.933439 0.66011,4.56156 c 59.03545,-36.444815 94.43965,0.0492 94.78284,15.05824 11.7533,-2.10216 24.54528,-1.8976 34.84417,-0.44208 C 266.49984,67.624304 185.48647,48.163446 129.68363,89.006094 Z m 165.1813,42.387536 c -23.81141,-3.98743 -47.7711,-3.50154 -71.86749,1.10815 l 0.38271,22.47554 c 16.86965,-5.33348 55.23323,-5.46091 71.88272,0.17245 z m -37.14666,29.8485 c -25.51724,-0.22627 -51.43007,6.32524 -74.99736,20.35112 -21.4249,12.75039 -38.32805,30.1602 -50.2224,50.1536 -0.81887,1.37194 -1.6234,2.75857 -2.39385,4.15661 -23.87163,43.34283 -24.7436,97.80566 2.43114,143.46868 40.80458,68.5595 129.20595,91.01214 197.76536,50.20954 68.56104,-40.8037 90.98767,-129.21948 50.18509,-197.77889 -26.77744,-44.99319 -74.05327,-70.12868 -122.76798,-70.56066 z"
+     sodipodi:nodetypes="cccccccccccccscccccss" />
+</svg>

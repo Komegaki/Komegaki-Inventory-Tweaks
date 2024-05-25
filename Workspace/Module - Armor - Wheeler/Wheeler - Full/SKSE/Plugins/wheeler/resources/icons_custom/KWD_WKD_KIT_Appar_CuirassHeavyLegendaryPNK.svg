@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="KWD_KIT_Cuirass_Heavy_Legendary_PNK.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1"
+     inkscape:cx="240"
+     inkscape:cy="231.5"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 232.13645,320.00003 q 12.38873,-4.26497 21.52796,-12.18564 7.92067,6.9052 18.48156,11.17017 36.76001,14.41968 103.78104,-3.85878 -65.59937,-1.82785 -107.63983,-26.60532 L 255.69535,187.78583 237.61999,288.92665 q -41.83737,24.37128 -106.42126,26.19913 64.3808,17.66918 100.93772,4.87425 M 357.64855,85.629553 q 13.4042,-17.26299 33.10432,-27.62079 Q 495.95557,105.53276 512,201.79932 h -65.19318 l -13.6073,92.61087 q -26.40222,19.09084 -30.26101,66.00555 -3.85878,46.50853 -22.74653,75.34788 l -9.13923,12.59183 q -115.76358,27.41769 -231.52717,0 l -8.73304,-12.59183 Q 111.49861,407.12736 107.84292,360.41574 103.98413,313.70412 77.37881,294.61328 L 63.77151,201.39313 H 0 q 15.84133,-96.06346 121.04403,-143.587457 19.70011,10.35779 33.30741,27.62078 2.84332,-70.87981 43.66522,0 v 25.996037 q 0,17.05989 14.01348,29.04244 14.01349,12.18564 33.51051,12.18564 h 19.29393 q 19.90322,0 33.9167,-12.18564 14.21659,-11.98255 14.21659,-29.04244 V 85.223363 q 40.6188,-70.67672 43.66521,0.20309 l 1.01547,0.2031"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       stroke="none"
+       id="path847"
+       style="fill:#ac3aac;stroke-width:4.06188;fill-opacity:1" />
+  </g>
+</svg>

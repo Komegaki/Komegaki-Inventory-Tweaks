@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="KWD_KIT_Helmet_Light_Legendary_PNK.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1.1131408"
+     inkscape:cx="271.3044"
+     inkscape:cy="194.49471"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="shape0"
+       transform="matrix(3.5852667,0,0,3.5852667,10.372934,107.48033)"
+       style="fill:#ac3aac;fill-opacity:1">
+      <path
+         d="m 107.5,31.7 -0.55,-1.55 -30.3,11.25 1.6,27.55 H 59.5 L 61.2,41.35 31.15,30.15 30.7,31.4 q -3.2,8.7 -5.2,20.65 l 4.45,1.6 v 46.85 q -10,-4.1 -20.05,-10.55 0,-22.05 5.65,-41.6 1.3,-4.3 2.85,-8.5 2.3,-6.4 5.3,-12.55 l 0.25,-0.6 q 13.8,-28.55 44.55,-44.35 28.95,15.8 44.15,43.85 l 0.8,1.5 q 3.05,5.95 5.5,12.4 l 2.8,8.55 q 5.7,19.35 5.35,41.65 -9.4,6.1 -20.05,10.2 V 54.05 l 5.65,-2.1 q -1.95,-11.8 -5.2,-20.25"
+         fill="#ffffff"
+         fill-rule="evenodd"
+         stroke="none"
+         id="path1"
+         style="fill:#ac3aac;fill-opacity:1" />
+    </g>
+  </g>
+</svg>

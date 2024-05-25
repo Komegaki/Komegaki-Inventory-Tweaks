@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="KWD_KIT_Boots_Light_Aedric.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1.1863374"
+     inkscape:cx="201.4604"
+     inkscape:cy="233.91323"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 226.6166,177.31092 q -25.42351,-50.61591 -17.92853,-128.471305 67.42185,78.350655 97.93006,65.011565 58.4741,-25.192395 120.97632,-4.95263 -34.99861,21.92365 -43.21998,74.65269 -8.32041,52.79506 12.44763,120.2169 20.66898,67.42185 6.10824,139.79633 -37.47492,27.1074 -83.86459,12.08443 l -14.59376,-36.22025 -31.69685,36.22025 q -74.78476,15.02297 -150.62607,0 Q 66.679578,427.0557 92.730428,381.68957 159.4589,375.68039 202.48077,335.06879 225.22986,312.3197 245.37058,289.00931 252.0071,227.76174 226.6166,177.31092"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       stroke="none"
+       id="path1"
+       style="display:inline;fill:#148fb8;fill-opacity:1;stroke-width:0.660352" />
+  </g>
+</svg>

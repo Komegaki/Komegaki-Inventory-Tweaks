@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="KWD_KIT_MaskFull_Legendary_RDD.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1.1131408"
+     inkscape:cx="229.97989"
+     inkscape:cy="278.94045"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#b24d5e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.866749"
+       d="m 388.03227,223.90059 -0.34873,-1.73351 -99.45631,12.64914 0.17267,2.60026 1.73351,6.58529 2.25152,3.98502 c 3.00316,4.27281 7.6247,7.91248 13.86124,10.91564 10.62786,5.08201 22.759,6.70041 36.38663,4.85178 13.74613,-1.84862 25.06807,-6.64284 33.96243,-14.38266 5.082,-4.50642 8.4305,-9.23969 10.04889,-14.20997 l 1.21211,-4.50304 0.17604,-6.75795 m 8.66074,100.84785 c -22.40686,54.63918 -55.21476,99.80504 -98.41688,135.50097 H 215.97539 C 174.38827,424.7871 141.29598,380.25437 116.69176,326.65462 86.54168,259.19023 71.353221,183.06509 71.122989,98.27583 c 121.863191,-62.033652 245.117921,-62.033652 369.754021,0 -1.03942,82.5953 -15.76742,158.0839 -44.184,226.47261 m -140.34597,23.73747 -63.93644,17.15557 v 12.82183 h 128.04556 v -12.82183 l -64.10912,-17.15557 m -132.89733,-124.58532 0.17267,6.75795 c 0.11512,1.49989 0.51801,3.00315 1.2121,4.50304 1.61838,4.97028 4.96689,9.70355 10.0489,14.20997 8.89435,7.73982 20.21627,12.53404 33.96242,14.38266 13.63101,1.84863 25.75876,0.23023 36.38662,-4.85178 6.23655,-3.00316 10.85809,-6.64283 13.86124,-10.91564 l 2.25152,-3.98502 1.73351,-6.58529 0.17268,-2.60026 -99.45631,-12.64914 -0.34535,1.73351"
+       id="path1-2" />
+  </g>
+</svg>

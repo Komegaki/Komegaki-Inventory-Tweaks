@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="armor_clothing_chest.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.83886719"
+     inkscape:cx="168.08382"
+     inkscape:cy="240.20489"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 395.00589,115.83824 q 4.42246,86.43894 0,175.29014 -11.25716,16.68473 -13.66941,44.4256 l -0.20102,2.81429 q -3.41736,42.81743 -19.49902,69.15116 l -7.63879,11.45819 q -98.70122,25.52964 -197.20142,0 l -7.63879,-11.45819 Q 132.87476,381.1857 129.65842,338.36827 l -0.20102,-2.81429 q -2.61327,-26.33373 -12.66431,-43.01845 -4.62348,-90.05733 -0.20102,-177.30035 22.11229,-18.694939 52.46643,-28.947 l 16.08167,-2.613271 q 10.6541,82.820571 67.94503,143.528851 52.86847,-61.91441 68.5481,-143.729872 l 20.10208,2.814292 q 30.55516,10.453082 53.27051,29.55006 m 28.34394,28.34393 3.61837,5.62858 L 512,251.52728 443.04987,318.46721 409.88143,278.26305 q 3.61838,-76.38791 0,-150.76561 l 13.4684,16.68473 M 208.05654,82.468784 q 45.83274,-4.422457 93.6757,0 l 2.61327,0.402042 Q 296.5057,151.01688 253.28622,200.26697 206.64939,152.02198 203.63408,82.870826 l 4.42246,-0.402042 M 87.64507,143.98115 q 6.23165,-9.04594 13.87044,-17.08677 -3.61838,74.77974 0.20102,151.36867 L 101.31449,278.06203 68.548097,317.26109 0,250.52218 83.62466,149.81075 l 3.81939,-5.42756 0.20102,-0.40204"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       stroke="none"
+       id="path2"
+       style="fill:#cbbf9a;stroke-width:4.02042;fill-opacity:1" />
+  </g>
+</svg>

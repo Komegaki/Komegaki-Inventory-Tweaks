@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="KWD_KIT_Gloves_Heavy.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.83886719"
+     inkscape:cx="168.08382"
+     inkscape:cy="240.20489"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(4.1084519,0,0,4.1084519,25.34407,14.3422)"
+       id="g849">
+      <g
+         id="shape0"
+         transform="translate(-1.45,-16.05)">
+        <path
+           d="m 86.516812,77.765375 q 1.4,15.7 4.9,24.249995 2.55,5.6 -0.8,8.65 -4.3,3.4 -9.3,0.95 -7.55,-9.75 -7.85,-21.249995 l -23.7,30.299995 q -3.95,2.9 -8.1,1.15 -4.15,-1.7 -3.3,-8.85 l 18.6,-22.549995 -23.2,19.799995 q -4.65,3.05 -7.75,0.1 -3,-2.85 -0.5,-7.55 l 20.05,-17.299995 -24.25,12.5 q -6.15,0.55 -7.85,-3.5 -1.6,-4.4 1.7,-6.7 l 20.6,-11.15 -19.3,5.25 q -5.55,-2 -5.65,-5.55 0.6,-3.1 3.8,-5.35 l 15.35,-4.85 2.8,-1.25 q 6.9,-9.35 18.5,-15.4 1.1,-0.85 6.25,-2.7 l 8.05,-19.5 q 30.1,11.2 38.799998,40.6 l -17.849998,9.9"
+           fill="#ffffff"
+           fill-rule="evenodd"
+           stroke="none"
+           id="path359"
+           style="fill:#808080;fill-opacity:1" />
+      </g>
+    </g>
+  </g>
+</svg>

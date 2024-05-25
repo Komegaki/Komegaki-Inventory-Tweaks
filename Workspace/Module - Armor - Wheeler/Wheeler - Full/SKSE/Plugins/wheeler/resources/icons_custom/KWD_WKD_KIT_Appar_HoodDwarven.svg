@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="KWD_KIT_Hood_Dwarven.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.83886719"
+     inkscape:cx="168.08382"
+     inkscape:cy="240.20489"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#cb974d;fill-rule:evenodd;stroke-width:0.972584;fill-opacity:1"
+       d="m 255.21372,34.495782 c -16.06863,-0.593847 -31.56294,8.837818 -46.48067,28.295464 -6.57317,8.632773 -16.23007,17.016008 -28.97984,25.146582 -22.87335,13.013312 -35.09523,33.912612 -36.67403,62.688522 -12.61501,44.54584 -28.65435,82.58158 -48.104397,114.11411 -43.640356,51.92493 -31.086051,86.96134 37.657227,105.103 1.31312,39.2892 -10.45064,66.06749 -35.291727,80.33079 107.385397,36.78551 213.060097,36.47269 317.029897,-0.93965 -24.57925,-13.64015 -36.27729,-40.10194 -35.09512,-79.39114 68.87421,-18.14166 81.42661,-53.17807 37.6592,-105.103 C 395.11214,233.95941 379.07857,195.92366 368.82791,150.62635 367.11819,121.85044 354.82673,100.95114 331.95724,87.937828 319.20745,79.807254 310.26964,72.610817 305.1443,66.35343 287.92575,45.708092 271.28234,35.089629 255.21372,34.495782 Z M 193.94624,165.45336 c 37.85654,19.39532 79.12636,20.64472 123.81798,3.75307 55.07317,100.97595 68.938,153.08808 41.5978,156.34324 -15.7726,2.12612 -30.95183,12.13782 -45.54226,30.03022 -14.9832,18.01701 -34.24091,47.98409 -57.76887,89.90162 -23.26229,-42.04216 -42.3228,-72.51158 -57.17507,-91.40471 -14.85229,-19.01776 -30.23251,-29.65142 -46.13605,-31.90584 -27.33635,-3.25149 -13.60488,-55.4924 41.20647,-156.7176 z"
+       id="rect1"
+       sodipodi:nodetypes="sccccccccccccscccccccc" />
+  </g>
+</svg>

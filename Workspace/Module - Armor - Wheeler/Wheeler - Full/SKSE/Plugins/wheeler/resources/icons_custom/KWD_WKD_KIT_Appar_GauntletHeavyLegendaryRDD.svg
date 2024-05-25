@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="KWD_KIT_Gauntlet_Heavy_Legendary_RDD.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.83886719"
+     inkscape:cx="330.20722"
+     inkscape:cy="224.7078"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="M 464.91155,159.22778 277.20461,296.59681 Q 237.5612,249.02471 182.06043,227.26693 L 293.06197,38.82244 q 142.16313,-5.162861 171.4808,118.37707 l 0.36878,2.02827 m 4.42532,45.72821 -193.23859,136.44709 q 3.50338,42.59362 14.56665,68.96109 7.7443,17.14808 -2.76582,26.73625 -13.27593,10.32573 -28.39574,2.76582 -23.41728,-29.87085 -24.33922,-65.27333 l -72.83323,93.11592 q -12.16961,9.035 -24.70799,3.68776 -12.90716,-5.34726 -10.32572,-27.28942 l 56.97587,-69.69865 -71.35814,61.2168 q -14.197868,9.58818 -23.601659,0.18439 -9.219397,-9.03501 -1.290717,-23.41727 L 149.60814,359.28871 74.74663,397.6414 q -18.991957,1.84388 -24.154818,-10.51011 -4.794091,-13.46032 5.162861,-20.65145 l 63.429457,-34.11177 -59.004142,15.85736 q -17.332471,-6.0848 -17.516855,-16.96369 1.475101,-9.77256 11.432045,-16.41053 l 47.203322,-14.93542 8.66624,-3.68776 4.97847,-6.2692 q 32.82105,59.18854 93.66909,78.1805 l 257.58997,-188.62888 3.1346,25.44554 m -304.42453,41.85606 7.00675,-4.6097 q 53.28812,20.83585 91.27203,65.45773 l -56.4227,41.48729 q -55.132,-17.33247 -84.26531,-71.9113 17.88564,-17.70125 42.40923,-30.42402"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       stroke="none"
+       id="path454"
+       style="fill:#b24d5e;stroke-width:3.68776;fill-opacity:1" />
+  </g>
+</svg>

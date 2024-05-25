@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="sword_two_handed.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1.1131408"
+     inkscape:cx="233.57334"
+     inkscape:cy="289.72077"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(0.44489368,0,0,0.44500407,181.38021,26.199898)"
+       id="g4" />
+    <g
+       transform="matrix(0.49444713,0,0,0.49444713,164.35423,-0.42028006)"
+       id="g391">
+      <path
+         d="m 272.8,769.15 -605.2,-607.4 0.2,-159.8 160.7,-1.1 606.3,606.35 -47.65,47.65 46.05,46 63.3,-63.3 12.75,-34.05 10.05,-7.9 q 14.9,-14.95 30.7,0.9 l 30.65,30.6 q 15.75,15.8 0.85,30.75 l -8.95,8.9 -33.2,10.5 -70.25,70.25 181.4,181.3 16.15,-16.15 35.25,35.2 -88.55,88.5 -35.25,-35.2 15.45,-15.45 -181.35,-181.3 -71.1,71.1 -11.4,34.15 -7.8,7.8 q -10.5,10.5 -20.95,7.05 -5.55,-1.55 -10.85,-6.85 l -30.6,-30.6 q -5.3,-5.35 -6.9,-10.9 -3.4,-10.4 7.1,-20.95 l 7.8,-7.8 34.15,-15 64,-64 -46.05,-46 -46.8,46.75"
+         fill="#ffffff"
+         fill-rule="evenodd"
+         stroke="none"
+         id="path389"
+         style="fill:#a6aebd" />
+    </g>
+  </g>
+</svg>

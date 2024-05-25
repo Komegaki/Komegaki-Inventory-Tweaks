@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="destruction_fire.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1.1131408"
+     inkscape:cx="242.55693"
+     inkscape:cy="235.81923"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <path
+     d="M 206.16479,108.39542 Q 194.43462,38.666101 256.1266,0 q -5.64786,27.153161 54.52355,112.5227 60.1714,85.15231 25.19813,163.57064 53.65465,-37.14553 41.05558,-136.41748 99.27196,172.04242 -21.07085,249.37463 Q 235.70743,465.94824 234.6213,512 q -39.31778,-83.19729 1.52058,-142.71702 40.4039,-59.3025 26.50148,-118.605 -31.06322,52.78574 -80.80781,94.27577 -32.80101,27.15316 -18.02969,70.59822 Q 59.320496,317.36614 103.2,248.94018 q 45.18286,-53.00297 69.51209,-109.26432 26.06704,34.97327 17.1608,76.4633 49.09291,-30.62877 16.2919,-107.74374"
+     fill="#e08300"
+     fill-rule="evenodd"
+     stroke="none"
+     id="path2"
+     style="stroke-width:4.34451;fill:#d2902d;fill-opacity:1" />
+</svg>

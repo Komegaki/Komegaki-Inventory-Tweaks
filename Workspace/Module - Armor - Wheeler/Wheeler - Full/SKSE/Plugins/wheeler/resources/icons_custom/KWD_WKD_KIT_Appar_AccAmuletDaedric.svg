@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="KWD_KIT_AccAmulet_Daedric.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.83886719"
+     inkscape:cx="258.68219"
+     inkscape:cy="252.12573"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(4.0618802,0,0,4.0618802,47.940103,349.69904)"
+       id="g849">
+      <g
+         id="shape0"
+         transform="translate(-1.45,-16.05)" />
+    </g>
+    <path
+       id="path2"
+       style="fill:#943838;fill-rule:evenodd;stroke-width:1.16686;fill-opacity:1"
+       d="m 256,51.501755 c -90.92566,0 -163.251291,72.030185 -163.251291,163.251285 0,92.15631 68.872161,139.57488 105.541131,153.20051 6.65842,-7.65949 13.80834,-15.66237 23.7431,-20.79588 C 174.2203,335.4389 119.61063,289.22872 119.61063,214.75304 c 0,-75.90934 60.4855,-136.389362 136.21619,-136.389362 h 0.34636 c 75.73061,0 136.21619,60.480102 136.21619,136.389362 0,74.47561 -54.60972,120.68587 -102.42231,132.40463 9.93475,5.13351 17.08469,13.1364 23.7431,20.79588 36.66893,-13.62563 105.54113,-61.04429 105.54113,-153.20051 0,-91.221 -72.32571,-163.251285 -163.25129,-163.251285 z M 255.65364,358.5908 a 51.192101,50.953394 0 0 0 -51.19166,50.9545 51.192101,50.953394 0 0 0 51.19166,50.95294 51.192101,50.953394 0 0 0 51.19165,-50.95294 51.192101,50.953394 0 0 0 -51.19165,-50.9545 z m 0,27.90726 a 23.048771,23.047226 0 0 1 23.0488,23.04724 23.048771,23.047226 0 0 1 -23.0488,23.04725 23.048771,23.047226 0 0 1 -23.04881,-23.04725 23.048771,23.047226 0 0 1 23.04881,-23.04724 z" />
+  </g>
+</svg>

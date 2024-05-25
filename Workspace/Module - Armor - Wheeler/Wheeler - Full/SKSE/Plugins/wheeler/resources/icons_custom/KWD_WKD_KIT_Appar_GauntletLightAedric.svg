@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="KWD_KIT_Gauntlet_Light_Aedric.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.83886719"
+     inkscape:cx="133.51339"
+     inkscape:cy="131.72526"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(4.1344454,0,0,4.1344454,44.223125,351.37297)"
+       id="g849">
+      <g
+         id="shape0"
+         transform="translate(-1.45,-16.05)">
+        <path
+           d="M 101.59098,-19.331606 57.247986,12.036275 q 0.910534,9.697183 3.323448,15.752231 1.775541,3.960821 -0.54632,6.100575 -3.186868,2.412914 -6.601369,0.637374 -5.372148,-6.829003 -5.508727,-14.932751 L 31.115673,40.945716 q -2.686074,2.094227 -5.599781,0.865007 -2.959235,-1.274747 -2.412915,-6.282682 L 36.169134,19.593704 19.91611,33.615921 q -3.368974,2.139754 -5.508728,0.04553 -2.094227,-2.048703 -0.318687,-5.326623 L 28.293019,16.08815 11.083934,24.920325 Q 6.7588997,25.284539 5.575206,22.507411 4.4825657,19.411597 6.7588997,17.72711 L 21.236384,9.8965223 7.7604866,13.584183 Q 3.7996656,12.172855 3.7541389,9.6688889 4.0728256,7.4836083 6.4402129,5.9357016 L 17.18451,2.4301473 19.142156,1.6106671 q 4.871355,-6.6468951 13.066157,-10.8808757 0.728427,-0.546321 1.638961,-1.0015884 l 14.067744,-23.855979 -0.09106,0.182106 13.111684,-22.308073 q 32.551575,-1.183693 39.244008,27.179428 l 0.45526,2.276334 0.95607,7.466375"
+           fill="#ffffff"
+           fill-rule="evenodd"
+           stroke="none"
+           id="path524"
+           style="fill:#148fb8;fill-opacity:1;stroke-width:0.910534" />
+      </g>
+    </g>
+  </g>
+</svg>
