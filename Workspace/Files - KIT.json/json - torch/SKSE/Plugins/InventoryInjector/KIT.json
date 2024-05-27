@@ -2555,6 +2555,383 @@
         "assign": {
             "iconColor": "#cf9317"
         }
-    }
+    },
+    {
+		"match": {
+			"formType": "Potion",
+            "keywords": [ "KIT_Data_TypePotion" ]
+		},
+		"assign": {
+			"itemType": "4",
+            "itemClass": "4",
+			"itemSort": "13",
+			"potionSort": "9"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_RestoreHealth" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Health",
+			"itemClass": "1",
+			"itemSort": "1",
+			"potionSort": "30",
+			"iconColor": "#b33441"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_EnhanceHealth" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Health",
+			"itemClass": "1",
+			"itemSort": "2",
+			"potionSort": "29",
+			"iconColor": "#8a2832"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_EnhanceHealthRegen" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Health",
+			"itemClass": "1",
+			"itemSort": "3",
+			"potionSort": "28",
+			"iconColor": "#8a2832"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_RestoreStamina" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Stamina",
+			"itemClass": "2",
+			"itemSort": "1",
+			"potionSort": "27",
+			"iconColor": "#70c888"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_EnhanceStamina" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Stamina",
+			"itemClass": "2",
+			"itemSort": "2",
+			"potionSort": "26",
+			"iconColor": "#3fa659"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_EnhanceStaminaRegen" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Stamina",
+			"itemClass": "2",
+			"itemSort": "3",
+			"potionSort": "25",
+			"iconColor": "#3fa659"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_RestoreMagicka" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Magicka",
+			"itemClass": "3",
+			"itemSort": "1",
+			"potionSort": "24",
+			"iconColor": "#2e89b7"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_EnhanceMagicka" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Magicka",
+			"itemClass": "3",
+			"itemSort": "2",
+			"potionSort": "23",
+			"iconColor": "#246a8e"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_EnhanceMagickaRegen" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Magicka",
+			"itemClass": "3",
+			"itemSort": "3",
+			"potionSort": "22",
+			"iconColor": "#246a8e"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_BecomeEtheral" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoCombat",
+			"itemClass": "4",
+			"itemSort": "1",
+			"potionSort": "21",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_triangle",
+			"iconColor": "#a3c5f5"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_TypeArmor" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoEnhance",
+			"itemClass": "4",
+			"itemSort": "2",
+			"potionSort": "20",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_shield",
+			"iconColor": "#7d3f35"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_TypeEnhance" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoEnhance",
+			"itemClass": "4",
+			"itemSort": "3",
+			"potionSort": "19",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_enhance",
+			"iconColor": "#d9c68c"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_ResistFire" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoResistanceShort",
+			"itemClass": "4",
+			"itemSort": "4",
+			"potionSort": "18",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_shield",
+			"iconColor": "#d2902d"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_ResistFrost" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoResistanceShort",
+			"itemClass": "4",
+			"itemSort": "5",
+			"potionSort": "17",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_shield",
+			"iconColor": "#a3e5f5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_ResistShock" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoResistanceShort",
+			"itemClass": "4",
+			"itemSort": "6",
+			"potionSort": "16",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_shield",
+			"iconColor": "#e9d262"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_ResistMagic" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoResistanceShort",
+			"itemClass": "4",
+			"itemSort": "7",
+			"potionSort": "15",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_shield",
+			"iconColor": "#6a76fb"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_ResistPoison" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoResistanceShort",
+			"itemClass": "4",
+			"itemSort": "8",
+			"potionSort": "14",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_shield",
+			"iconColor": "#8ed65c"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_CureAilment" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoUtility",
+			"itemClass": "4",
+			"itemSort": "9",
+			"potionSort": "13",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_square",
+			"iconColor": "#b33441"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_TypeSneak" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoUtility",
+			"itemClass": "4",
+			"itemSort": "10",
+			"potionSort": "12",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_square",
+			"iconColor": "#6a55d5"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_TypeUtility" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoUtility",
+			"itemClass": "4",
+			"itemSort": "11",
+			"potionSort": "11",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_square",
+			"iconColor": "#a3c5f5"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+            "keywords": [ "KIT_Data_TypePotionSpecial" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoSpecial",
+            "itemClass": "0",
+			"itemSort": "0",
+			"potionSort": "50",
+            "iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_special",
+			"iconColor": "#FFCC99"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Data_TypeDrug" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$FoodInfoDrug",
+			"foodTypeDisplay": "$FoodInfoDrug",
+            "itemClass": "4",
+			"itemSort": "12",
+			"potionSort": "10",
+			"iconSource": "KIT/Food.swf",
+			"iconLabel": "food_skooma",
+			"iconColor": "#79204d"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Data_TypePoison" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Poison",
+            "itemType": "5",
+            "itemClass": "0",
+			"itemSort": "0",
+			"potionSort": "9",
+			"iconColor": "#990099"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Poison_TypeWeaken" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoDebuff",
+            "itemType": "5",
+            "itemClass": "1",
+			"itemSort": "1",
+			"potionSort": "8",
+			"iconColor": "#990099"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Data_TypeFood" ]
+		},
+		"assign": {
+			"itemType": "5",
+			"itemClass": "1",
+			"itemSort": "1",
+			"iconColor": "#cbbf9a"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Data_TypeDrink" ]
+		},
+		"assign": {
+			"itemType": "5",
+			"itemClass": "5",
+			"itemSort": "5",
+			"iconColor": "#cbbf9a"
+		}
+	}
 ]	
 }
