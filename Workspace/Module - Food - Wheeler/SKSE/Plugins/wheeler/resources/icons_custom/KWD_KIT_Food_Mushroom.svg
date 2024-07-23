@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="KWD_KIT_Food_Mushroom.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.82128908"
+     inkscape:cx="158.28775"
+     inkscape:cy="268.48038"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <path
+     id="path859"
+     style="display:inline;fill:#8f6956;fill-opacity:1;stroke-width:0.677485"
+     d="M 226.20142,72.676031 C 149.4427,83.240333 91.251621,160.53749 85.556336,236.28946 c -0.68267,17.12345 4.573703,60.11085 70.423864,79.84168 52.01236,16.27564 165.22525,9.96 235.66252,-63.17576 C 482.55449,156.85151 356.05203,55.463471 226.20142,72.676031 Z M 334.48897,313.41284 c -19.467,9.4133 -47.08075,21.44828 -84.44927,24.39113 3.90683,24.25398 10.15963,42.12216 27.142,65.99213 48.47044,67.51451 144.57513,32.73424 144.57513,-17.88588 0,-63.1888 -59.59405,-30.16852 -87.26786,-72.49738 z"
+     sodipodi:nodetypes="ccccccccsc" />
+</svg>

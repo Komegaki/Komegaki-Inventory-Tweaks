@@ -1,0 +1,3818 @@
+{
+"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+"rules": [
+    {
+        "match": {
+            "iconColor": { "anyOf": [ null, "#FFFFFF" ] }
+        },
+        "assign": {
+            "iconColor": "#FFCC99"
+        }
+    },
+	{
+		"match": {
+			"equipSlot": {
+				"anyOf": [
+					"Skyrim.esm|13F42",
+					"Skyrim.esm|13F43",
+					"Skyrim.esm|13F44",
+					"Skyrim.esm|141E8"
+				]
+			}
+		},
+		"assign": {
+			"equipTypeDisplay": "$DispInfoEquipType2H"
+		}
+	},
+	{
+		"match": {
+			"equipSlot": "Skyrim.esm|13F45"
+		},
+		"assign": {
+			"equipTypeDisplay": "$DispInfoEquipType1H"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon"
+		},
+		"assign": {
+			"itemType": "1",
+			"itemClass": "0",
+			"itemSort": "0",
+			"iconColor": "#a3abc2"
+		}
+	},
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeCestus" ]
+        },
+        "assign": {
+            "iconLabel": "armor_hands",
+            "subTypeDisplay": "$WeapTypeCestus",
+            "itemType": "1",
+            "itemClass": "1",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeUnarmed" ]
+        },
+        "assign": {
+            "iconLabel": "clothing_hands",
+            "subTypeDisplay": "$WeapTypeFist",
+            "itemType": "1",
+            "itemClass": "1",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeDagger1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Dagger",
+            "itemClass": "2",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeChakram1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeChakram",
+            "itemClass": "2",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeClaw1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeClaw",
+            "itemClass": "2",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeCutlery1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeCutlery",
+            "itemClass": "2",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeHuntingKnife1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeHuntingKnife",
+            "itemClass": "2",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeKunai1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeKunai",
+            "itemClass": "2",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeRevDagger1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeReverseDagger",
+            "itemClass": "2",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeSai1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeSai",
+            "itemClass": "2",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeScalpel1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeScalpel",
+            "itemClass": "2",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeShiv1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Dagger",
+            "itemClass": "2",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeTanto1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeTanto",
+            "itemClass": "2",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeToolKnife1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeTool",
+            "itemClass": "2",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeTwinDagger1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeTwinDagger",
+            "itemClass": "2",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeSword1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Sword",
+            "itemClass": "3",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeKatana1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Katana",
+            "itemClass": "3",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeLightsaber1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeLightsaber",
+            "itemClass": "3",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeRaiper1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Rapier",
+            "itemClass": "3",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeSaber1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeSaber",
+            "itemClass": "3",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeScimitar1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeScimitar",
+            "itemClass": "3",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeTwinblade1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeTwinblade",
+            "itemClass": "3",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeWarAxe1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$War Axe",
+            "itemClass": "4",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeCleaver1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeCleaver",
+            "itemClass": "4",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeCrescent1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeCrescent",
+            "itemClass": "4",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeHandBlade1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeHandblade",
+            "itemClass": "4",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeHatchet1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeHatchet",
+            "itemClass": "4",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypePickaxe1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Pickaxe",
+            "itemClass": "4",
+            "itemSort": "1",
+            "iconLabel": "weapon_pickaxe"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeSickle1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeSickle",
+            "itemClass": "4",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeWarpick1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeWarpick",
+            "itemClass": "4",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeWoodHatchet1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeWoodhatchet",
+            "itemClass": "4",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeWoodAxe1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeWoodaxe",
+            "itemClass": "4",
+            "itemSort": "1",
+            "iconLabel": "weapon_woodaxe"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeMace1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Mace",
+            "itemClass": "5",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeBoomerang1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeBoomerang",
+            "itemClass": "5",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeClub1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeClub",
+            "itemClass": "5",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeFishingPole1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeFishingRod",
+            "itemClass": "5",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeHammer1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeHammer",
+            "itemClass": "5",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeQuarterstaff1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Quarterstaff",
+            "itemClass": "5",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeWhip1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Whip",
+            "itemClass": "5",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Light"
+        },
+        "assign": {
+            "subTypeDisplay": "$Torch",
+            "itemType": "1",
+            "itemClass": "6",
+            "itemSort": "2",
+            "iconLabel": "misc_torch",
+            "iconColor": "#d2902d"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeGlaive1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeGlaive",
+            "itemClass": "7",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeHalberd1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Halberd",
+            "itemClass": "7",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeWarscythe1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeWarscythe",
+            "itemClass": "7",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeJavelin1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeJavelin",
+            "itemClass": "8",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeLance1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeLance",
+            "itemClass": "8",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypePike1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Pike",
+            "itemClass": "8",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeSpear1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Spear",
+            "itemClass": "8",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeTrident1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeTrident",
+            "itemClass": "8",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeGreatsword2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Greatsword",
+            "itemClass": "9",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeMassiveSword2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeGiantSword",
+            "itemClass": "9",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeLightsaber2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeLightsaber",
+            "itemClass": "9",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeRapier2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Rapier",
+            "itemClass": "9",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeNodachi2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeNodachi",
+            "itemClass": "9",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeSaber2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeSaber",
+            "itemClass": "9",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeScimitar2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeScimitar",
+            "itemClass": "9",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeTwinblade2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeTwinblade",
+            "itemClass": "9",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeBattleaxe2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Battleaxe",
+            "itemClass": "10",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeCleaver2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeCleaver",
+            "itemClass": "10",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeCrescent2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeCrescent",
+            "itemClass": "10",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypePickaxe2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Pickaxe",
+            "itemClass": "10",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeScythe2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Scythe",
+            "itemClass": "10",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeWarpick2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeWarpick",
+            "itemClass": "10",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeWoodaxe2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeWoodaxe",
+            "itemClass": "10",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeWarhammer2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Warhammer",
+            "itemClass": "11",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeBladestaff2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeBladestaff",
+            "itemClass": "11",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeClub2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeClub",
+            "itemClass": "11",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeMace2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Mace",
+            "itemClass": "11",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeQuarterstaff2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Quarterstaff",
+            "itemClass": "11",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeGlaive2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeGlaive",
+            "itemClass": "12",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeHalberd2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Halberd",
+            "itemClass": "12",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeWarscythe2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeWarscythe",
+            "itemClass": "13",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeLance2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeLance",
+            "itemClass": "14",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypePike2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Pike",
+            "itemClass": "14",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeSpear2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Spear",
+            "itemClass": "14",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeTrident2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeTrident",
+            "itemClass": "14",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeCrossbow1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Crossbow",
+            "itemClass": "15",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeBomb1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeBomb",
+            "iconSource": "KIT/Weapons.swf",
+            "iconLabel": "ammo_bomb",
+            "itemClass": "16",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeGun1H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypePistol",
+            "itemClass": "16",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeBow2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Bow",
+            "itemClass": "17",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeBowblade2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeBowblade",
+            "itemClass": "18",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeGreatbow2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeGreatbow",
+            "itemClass": "18",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeShortbow2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeShortbow",
+            "itemClass": "18",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeCrossbow2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Crossbow",
+            "itemClass": "19",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeGun2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeRifle",
+            "itemClass": "20",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Weap_TypeSlingshot2H" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeSlingshot",
+            "itemClass": "20",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Ammo_TypeArrow" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Arrow",
+            "iconSource": "KIT/Weapons.swf",
+            "iconLabel": "ammo_arrow",
+            "iconColor": "#a6aebd",
+            "itemType": "1",
+            "itemClass": "21",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Ammo_TypeGreatarrow" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$AmmoTypeGreatArrow",
+            "iconSource": "KIT/Weapons.swf",
+            "iconLabel": "ammo_greatarrow",
+            "iconColor": "#a6aebd",
+            "itemType": "1",
+            "itemClass": "22",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Ammo_TypeJavelin" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeJavelin",
+            "iconSource": "KIT/Weapons.swf",
+            "iconLabel": "ammo_javelin",
+            "iconColor": "#a6aebd",
+            "itemType": "1",
+            "itemClass": "22",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Ammo_TypeBolt" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Bolt",
+            "iconSource": "KIT/Weapons.swf",
+            "iconLabel": "ammo_bolt",
+            "iconColor": "#a6aebd",
+            "itemType": "1",
+            "itemClass": "23",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Ammo_TypeBullet" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$AmmoTypeBullet",
+            "iconSource": "KIT/Weapons.swf",
+            "iconLabel": "ammo_bullet",
+            "iconColor": "#a6aebd",
+            "itemType": "1",
+            "itemClass": "24",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Ammo_TypeBomb" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeBomb",
+            "iconSource": "KIT/Weapons.swf",
+            "iconLabel": "ammo_bomb",
+            "iconColor": "#a6aebd",
+            "itemType": "1",
+            "itemClass": "25",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Ammo_TypeDart" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$AmmoTypeDart",
+            "iconSource": "KIT/Weapons.swf",
+            "iconLabel": "ammo_bolt",
+            "iconColor": "#a6aebd",
+            "itemType": "1",
+            "itemClass": "25",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Ammo_TypeSlingshot" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeSlingshot",
+            "iconSource": "KIT/Weapons.swf",
+            "iconLabel": "ammo_bulletcircle",
+            "iconColor": "#a6aebd",
+            "itemType": "1",
+            "itemClass": "25",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Ammo_TypeDaggerWeap" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Dagger",
+            "iconLabel": "weapon_dagger",
+            "iconColor": "#a6aebd",
+            "itemType": "1",
+            "itemClass": "25",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Ammo_TypeHatchetWeap" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeHatchet",
+            "iconLabel": "weapon_woodaxe",
+            "iconColor": "#a6aebd",
+            "itemType": "1",
+            "itemClass": "25",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Ammo_TypeJavelinWeap" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeJavelin",
+            "iconSource": "KIT/Weapons.swf",
+            "iconLabel": "ammo_javelin",
+            "iconColor": "#a6aebd",
+            "itemType": "1",
+            "itemClass": "25",
+            "itemSort": "0"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Var_IsRarityAedric" ]
+        },
+        "assign": {
+            "iconColor": "#148fb8"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Var_IsRarityDaedric" ]
+        },
+        "assign": {
+            "iconColor": "#943838"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Var_IsRarityDwarven" ]
+        },
+        "assign": {
+            "iconColor": "#cb974d"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Var_IsRarityLegendaryPPL" ]
+        },
+        "assign": {
+            "iconColor": "#7e1fad"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Var_IsRarityLegendaryPNK" ]
+        },
+        "assign": {
+            "iconColor": "#ac3aac"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Var_IsRarityLegendaryRDD" ]
+        },
+        "assign": {
+            "iconColor": "#b24d5e"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "keywords": [ "KIT_Var_IsRarityLegendaryONG" ]
+        },
+        "assign": {
+            "iconColor": "#cf9317"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "subType": "Staff",
+            "keywords": [ "KIT_Data_TypeStaff" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$WeapTypeMagicStaff",
+            "itemType": "1",
+            "itemClass": "26",
+            "itemSort": "0",
+            "iconColor": "#a6aebd"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "subType": "Staff",
+            "keywords": [ "KIT_Staff_TypeAlteration" ]
+        },
+        "assign": {
+            "iconSource": "KIT/Staves.swf",
+            "iconLabel": "staff_alteration"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "subType": "Staff",
+            "keywords": [ "KIT_Staff_TypeConjuration" ]
+        },
+        "assign": {
+            "iconSource": "KIT/Staves.swf",
+            "iconLabel": "staff_conjuration"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "subType": "Staff",
+            "keywords": [ "KIT_Staff_TypeDestruction" ]
+        },
+        "assign": {
+            "iconSource": "KIT/Staves.swf",
+            "iconLabel": "staff_destruction"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "subType": "Staff",
+            "keywords": [ "KIT_Staff_TypeIllusion" ]
+        },
+        "assign": {
+            "iconSource": "KIT/Staves.swf",
+            "iconLabel": "staff_illusion"
+        }
+    },
+    {
+        "match": {
+            "formType": "Weapon",
+            "subType": "Staff",
+            "keywords": [ "KIT_Staff_TypeRestoration" ]
+        },
+        "assign": {
+            "iconSource": "KIT/Staves.swf",
+            "iconLabel": "staff_restoration"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeHeavy" ]
+        },
+        "assign": {
+            "itemType": "2",
+            "iconColor": "#808080"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeLight" ]
+        },
+        "assign": {
+            "itemType": "2",
+            "iconColor": "#74503e"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeClothing" ]
+        },
+        "assign": {
+            "itemType": "2",
+            "iconColor": "#cbbf9a"
+        }
+    },
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": {
+				"anyOf": [
+					"KIT_Data_TypeAccHeavy",
+                    "KIT_Data_SlotAccHeavy"
+				]
+			}
+		},
+		"assign": {
+			"itemClass": "5",
+			"itemSort": "7",
+			"iconLabel": "default_armor"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": {
+				"anyOf": [
+					"KIT_Data_TypeAccLight",
+                    "KIT_Data_SlotAccLight"
+				]
+			}
+		},
+		"assign": {
+			"itemClass": "5",
+			"itemSort": "8",
+			"iconLabel": "default_armor"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": {
+				"anyOf": [
+					"KIT_Data_TypeAccClothing",
+                    "KIT_Data_SlotAccClothing"
+				]
+			}
+		},
+		"assign": {
+			"itemClass": "5",
+			"itemSort": "9",
+			"iconLabel": "default_armor"
+		}
+	},
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeHeadHeavy" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$ArmrTypeHelmet",
+            "itemClass": "1",
+            "itemSort": "1",
+            "iconSource": "KIT/Armor.swf",
+            "iconLabel": "armor_head"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeHeadLight" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$ArmrTypeHelmet",
+            "itemClass": "1",
+            "itemSort": "2",
+            "iconSource": "KIT/Armor.swf",
+            "iconLabel": "lightarmor_head"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeHeadClothing" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$ArmrTypeHatGeneric",
+            "itemClass": "1",
+            "itemSort": "3",
+            "iconLabel": "clothing_head"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeCircletHeavy" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Circlet",
+            "itemClass": "1",
+            "itemSort": "4",
+            "iconSource": "KIT/Armor.swf",
+            "iconLabel": "accessory_circlet"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeCircletLight" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Circlet",
+            "itemClass": "1",
+            "itemSort": "5",
+            "iconSource": "KIT/Armor.swf",
+            "iconLabel": "accessory_circlet"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeCircletClothing" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Circlet",
+            "itemClass": "1",
+            "itemSort": "6",
+            "iconSource": "KIT/Armor.swf",
+            "iconLabel": "accessory_circlet"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeBodyHeavy" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$ArmrTypeCuirass",
+            "itemClass": "2",
+            "itemSort": "1",
+            "iconLabel": "armor_body"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeBodyLight" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$ArmrTypeCuirass",
+            "itemClass": "2",
+            "itemSort": "2",
+            "iconSource": "KIT/Armor.swf",
+            "iconLabel": "lightarmor_body"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeBodyClothing" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$ArmrTypeTunic",
+            "itemClass": "2",
+            "itemSort": "3",
+            "iconLabel": "clothing_body"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeHandsHeavy" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$ArmrTypeGauntlets",
+            "itemClass": "3",
+            "itemSort": "1",
+            "iconLabel": "armor_hands"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeHandsLight" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$ArmrTypeGauntlets",
+            "itemClass": "3",
+            "itemSort": "2",
+            "iconLabel": "lightarmor_hands"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeHandsClothing" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$ArmrTypeGloves",
+            "itemClass": "3",
+            "itemSort": "3",
+            "iconLabel": "clothing_hands"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeFeetHeavy" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$ArmrTypeBoots",
+            "itemClass": "4",
+            "itemSort": "1",
+            "iconLabel": "armor_feet"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeFeetLight" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$ArmrTypeBoots",
+            "itemClass": "4",
+            "itemSort": "2",
+            "iconLabel": "lightarmor_feet"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeFeetClothing" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$ArmrTypeBoots",
+            "itemClass": "4",
+            "itemSort": "3",
+            "iconSource": "KIT/Armor.swf",
+            "iconLabel": "clothing_feet"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeAmuletHeavy" ]
+        },
+        "assign": {
+            "itemClass": "5",
+            "itemSort": "1",
+            "iconSource": "KIT/Armor.swf",
+            "iconLabel": "accessory_amulet"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeAmuletLight" ]
+        },
+        "assign": {
+            "itemClass": "5",
+            "itemSort": "2",
+            "iconSource": "KIT/Armor.swf",
+            "iconLabel": "accessory_amulet"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeAmuletClothing" ]
+        },
+        "assign": {
+            "itemClass": "5",
+            "itemSort": "3",
+            "iconSource": "KIT/Armor.swf",
+            "iconLabel": "accessory_amulet"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeRingHeavy" ]
+        },
+        "assign": {
+            "itemClass": "5",
+            "itemSort": "4",
+            "iconSource": "KIT/Armor.swf",
+            "iconLabel": "accessory_ring"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeRingLight" ]
+        },
+        "assign": {
+            "itemClass": "5",
+            "itemSort": "5",
+            "iconSource": "KIT/Armor.swf",
+            "iconLabel": "accessory_ring"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeRingClothing" ]
+        },
+        "assign": {
+            "itemClass": "5",
+            "itemSort": "6",
+            "iconSource": "KIT/Armor.swf",
+            "iconLabel": "accessory_ring"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeShieldHeavy" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Shield",
+            "iconLabel": "armor_shield",
+            "itemType": "1",
+            "itemClass": "6",
+            "itemSort": "1"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Data_TypeShieldLight" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Shield",
+            "iconLabel": "lightarmor_shield",
+            "itemType": "1",
+            "itemClass": "6",
+            "itemSort": "2"
+        }
+    },
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccArtifactAedric" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$MiscInfoArtifact"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccArtifactDaedric" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$MiscInfoArtifact"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccBackpack" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeBackpack"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccBandolier" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeBandolier"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccBagBelt" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypePouch"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccBanner" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeBanner"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccBelt" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeBelt"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccBeltBook" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeBook"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccCloak" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeCloak"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ToolCompass" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeCompass"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccDagger" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Dagger"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccEffect" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeEffect"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccEyePatch" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeEyePatch"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccFlask" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeFlask"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccFlaskEmpty" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeFlask"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccFlower" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeFlower"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccGarment" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeGarment"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccGlasses" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeGlasses"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccGoggles" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeGoggles"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccGorget" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeGorget"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccHalo" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeHalo"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccInstrument" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeInstrument"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccJewelry" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeJewelry"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccKatana" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Katana"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccLantern" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeLantern"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccMagic" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeMagic"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccMantle" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeMantle"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccMap" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$BookInfoMap"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccNails" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeNail"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccPauldron" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypePauldron"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccPiercing" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypePiercing"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccScabbard" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeScabbard"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccShield" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Shield"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccSpyglass" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeSpyglass"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccStrapOn" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeStrapOn"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccTail" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeTail"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccTasset" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeTasset"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccTattoo" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeTatoo"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccToy" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeToy"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccTool" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeTool"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccTorc" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeTorc"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccWaterskin" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeWaterskin"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccWalkingStick" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeWalkingStick"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccWings" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeWings"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadBandage" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeBandage"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadBandana" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeBandana"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadBarrette" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeBarrette"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadBlindfold" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeBlindfold"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadCrown" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeCrown"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadEarCuffs" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeEarCuffs"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadEars" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeEars"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadGag" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeGag"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadHatConical" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeHatConical"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadHatGeneric" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeHatGeneric"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadHatWizard" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeHatWizard"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadHeadgear" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeHeadgear"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadHood" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeHoodGeneric",
+            "iconLabel": "clothing_head"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadMasked" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeHoodMasked",
+			"iconLabel": "clothing_head"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadMaskEyes" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeMaskEyes"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadMaskFull" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeMaskFull",
+            "iconSource": "KIT/Armor.swf",
+			"iconLabel": "clothing_mask"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadMaskMouth" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeMaskMouth"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadHornsAntlers" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeHornsAntlers"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadHornsGeneric" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeHornsGeneric"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHeadWig" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeWig"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeBodyAbs" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeAbs"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeBodyCorset" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeCorset"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeBodyDress" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeDress"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeBodyHarness" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeHarness"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeBodyLapels" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeLapels"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeBodyPants" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypePants"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeBodyRobes" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeRobes",
+            "iconSource": "KIT/Armor.swf",
+			"iconLabel": "clothing_robes"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeBodySkirt" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeSkirt"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeBodySpine" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeSpine"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeBodyTorso" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeTorso"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeBodyUnderwear" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeUnderwear"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHandArmlet" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeArmlet"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHandBandage" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeBandage"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHandBracer" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeBracers",
+            "iconLabel": "armor_bracer"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHandBracelet" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeBracelet"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHandCestus" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$WeapTypeCestus"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHandClaws" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$WeapTypeClaws"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHandCuffs" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeHandCuffs"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeHandProsthetic" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeProsthetic"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeFeetFootwraps" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeFootrwaps"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeFeetGreaves" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeGreaves"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeFeetHeels" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeHeels"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeFeetHooves" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeHooves"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeFeetPaws" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypePaws"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeFeetSabatons" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeSabatons"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeFeetSandals" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeSandals"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeFeetShoes" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ArmrTypeShoes",
+            "iconLabel": "clothing_shoes"
+		}
+	},
+    {
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeFeetStockings" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeStockings"
+		}
+	},
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Var_IsRarityAedric" ]
+        },
+        "assign": {
+            "iconColor": "#148fb8"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Var_IsRarityDaedric" ]
+        },
+        "assign": {
+            "iconColor": "#943838"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Var_IsRarityDwarven" ]
+        },
+        "assign": {
+            "iconColor": "#cb974d"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Var_IsRarityLegendaryPPL" ]
+        },
+        "assign": {
+            "iconColor": "#7e1fad"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Var_IsRarityLegendaryPNK" ]
+        },
+        "assign": {
+            "iconColor": "#ac3aac"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Var_IsRarityLegendaryRDD" ]
+        },
+        "assign": {
+            "iconColor": "#b24d5e"
+        }
+    },
+    {
+        "match": {
+            "formType": "Armor",
+            "keywords": [ "KIT_Var_IsRarityLegendaryONG" ]
+        },
+        "assign": {
+            "iconColor": "#cf9317"
+        }
+    },
+    {
+		"match": {
+			"formType": "Potion",
+            "keywords": [ "KIT_Data_TypePotion" ]
+		},
+		"assign": {
+			"itemType": "4",
+            "itemClass": "4",
+			"itemSort": "13",
+			"potionSort": "9"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_RestoreHealth" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Health",
+			"itemClass": "1",
+			"itemSort": "1",
+			"potionSort": "30",
+			"iconColor": "#b33441"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_EnhanceHealth" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Health",
+			"itemClass": "1",
+			"itemSort": "2",
+			"potionSort": "29",
+			"iconColor": "#8a2832"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_EnhanceHealthRegen" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Health",
+			"itemClass": "1",
+			"itemSort": "3",
+			"potionSort": "28",
+			"iconColor": "#8a2832"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_RestoreStamina" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Stamina",
+			"itemClass": "2",
+			"itemSort": "1",
+			"potionSort": "27",
+			"iconColor": "#70c888"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_EnhanceStamina" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Stamina",
+			"itemClass": "2",
+			"itemSort": "2",
+			"potionSort": "26",
+			"iconColor": "#3fa659"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_EnhanceStaminaRegen" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Stamina",
+			"itemClass": "2",
+			"itemSort": "3",
+			"potionSort": "25",
+			"iconColor": "#3fa659"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_RestoreMagicka" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Magicka",
+			"itemClass": "3",
+			"itemSort": "1",
+			"potionSort": "24",
+			"iconColor": "#2e89b7"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_EnhanceMagicka" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Magicka",
+			"itemClass": "3",
+			"itemSort": "2",
+			"potionSort": "23",
+			"iconColor": "#246a8e"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_EnhanceMagickaRegen" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Magicka",
+			"itemClass": "3",
+			"itemSort": "3",
+			"potionSort": "22",
+			"iconColor": "#246a8e"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_BecomeEtheral" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoCombat",
+			"itemClass": "4",
+			"itemSort": "1",
+			"potionSort": "21",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_triangle",
+			"iconColor": "#a3c5f5"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_TypeArmor" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoEnhance",
+			"itemClass": "4",
+			"itemSort": "2",
+			"potionSort": "20",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_shield",
+			"iconColor": "#7d3f35"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_TypeEnhance" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoEnhance",
+			"itemClass": "4",
+			"itemSort": "3",
+			"potionSort": "19",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_enhance",
+			"iconColor": "#d9c68c"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_ResistFire" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoResistanceShort",
+			"itemClass": "4",
+			"itemSort": "4",
+			"potionSort": "18",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_shield",
+			"iconColor": "#d2902d"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_ResistFrost" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoResistanceShort",
+			"itemClass": "4",
+			"itemSort": "5",
+			"potionSort": "17",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_shield",
+			"iconColor": "#a3e5f5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_ResistShock" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoResistanceShort",
+			"itemClass": "4",
+			"itemSort": "6",
+			"potionSort": "16",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_shield",
+			"iconColor": "#e9d262"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_ResistMagic" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoResistanceShort",
+			"itemClass": "4",
+			"itemSort": "7",
+			"potionSort": "15",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_shield",
+			"iconColor": "#6a76fb"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_ResistPoison" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoResistanceShort",
+			"itemClass": "4",
+			"itemSort": "8",
+			"potionSort": "14",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_shield",
+			"iconColor": "#8ed65c"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_CureAilment" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoUtility",
+			"itemClass": "4",
+			"itemSort": "9",
+			"potionSort": "13",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_square",
+			"iconColor": "#b33441"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_TypeSneak" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoUtility",
+			"itemClass": "4",
+			"itemSort": "10",
+			"potionSort": "12",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_square",
+			"iconColor": "#6a55d5"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_TypeUtility" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoUtility",
+			"itemClass": "4",
+			"itemSort": "11",
+			"potionSort": "11",
+			"iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_square",
+			"iconColor": "#a3c5f5"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+            "keywords": [ "KIT_Data_TypePotionSpecial" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoSpecial",
+            "itemClass": "0",
+			"itemSort": "0",
+			"potionSort": "50",
+            "iconSource": "KIT/Potions.swf",
+			"iconLabel": "potion_special",
+			"iconColor": "#FFCC99"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Data_TypeDrug" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$FoodInfoDrug",
+			"foodTypeDisplay": "$FoodInfoDrug",
+            "itemClass": "4",
+			"itemSort": "12",
+			"potionSort": "10",
+			"foodSort": "3",
+			"iconSource": "KIT/Food.swf",
+			"iconLabel": "food_skooma",
+			"iconColor": "#79204d"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Data_TypePoison" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$Poison",
+            "itemType": "5",
+            "itemClass": "0",
+			"itemSort": "0",
+			"potionSort": "9",
+			"iconColor": "#990099"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Poison_TypeDebuff" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoDebuff",
+            "itemClass": "1",
+			"itemSort": "1",
+			"potionSort": "8",
+			"iconColor": "#990099"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Poison_TypeUtility" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoDebuff",
+            "itemClass": "1",
+			"itemSort": "2",
+			"potionSort": "7",
+			"iconColor": "#990099"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Poison_TypeWeaken" ]
+		},
+		"assign": {
+            "subTypeDisplay": "$MagicInfoWeaken",
+            "itemClass": "1",
+			"itemSort": "3",
+			"potionSort": "6",
+			"iconColor": "#990099"
+		}
+	},
+    {
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Data_TypeFood" ]
+		},
+		"assign": {
+			"itemType": "5",
+			"itemClass": "4",
+			"itemSort": "4",
+			"foodSort": "1",
+			"iconColor": "#cbbf9a"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Data_TypeDrink" ]
+		},
+		"assign": {
+			"itemType": "5",
+			"itemClass": "5",
+			"itemSort": "5",
+			"foodSort": "2",
+			"iconColor": "#cbbf9a"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Food_TypeVegetable" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$FoodInfoVegetable",
+			"iconSource": "KIT/Food.swf",
+			"iconLabel": "food_leek",
+			"iconColor": "#47743e"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Food_TypeTreat" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$FoodInfoTreat",
+			"iconSource": "KIT/Food.swf",
+			"iconLabel": "food_sweetroll",
+			"iconColor": "#CBBF9A"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Food_TypeStew" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$FoodInfoStew",
+			"iconSource": "KIT/Food.swf",
+			"iconLabel": "food_stew",
+			"iconColor": "#74503e"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Food_TypeSoup" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$FoodInfoSoup",
+			"iconSource": "KIT/Food.swf",
+			"iconLabel": "food_stew",
+			"iconColor": "#74503e"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Food_TypeMushroom" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$FoodInfoMushroom",
+			"iconSource": "KIT/Food.swf",
+			"iconLabel": "food_mushroom",
+			"iconColor": "#8f6956"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Food_TypeMeatRaw" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$FoodInfoMeatRaw",
+			"iconSource": "KIT/Food.swf",
+			"iconLabel": "food_rawmeat",
+			"iconColor": "#842e2e"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Food_TypeMeatCooked" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$FoodInfoMeatCooked",
+			"iconSource": "KIT/Food.swf",
+			"iconLabel": "food_cookedmeat",
+			"iconColor": "#7d3f35"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Food_TypeMeal" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$FoodInfoMeal",
+			"iconSource": "KIT/Food.swf",
+			"iconLabel": "food_pie",
+			"iconColor": "#74503e"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Food_TypeFruit" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$FoodInfoFruit",
+			"iconLabel": "default_food",
+			"iconColor": "#842e2e"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Food_TypeFish" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$FoodInfoFish",
+			"iconSource": "KIT/Food.swf",
+			"iconLabel": "food_fish",
+			"iconColor": "#9eafa3"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Food_TypeCheese" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$FoodInfoCheese",
+			"iconSource": "KIT/Food.swf",
+			"iconLabel": "food_cheese",
+			"iconColor": "#d9c68c"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Food_TypeBread" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$FoodInfoBread",
+			"iconSource": "KIT/Food.swf",
+			"iconLabel": "food_bread",
+			"iconColor": "#8f6e56"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Food_TypeIngredient" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$FoodInfoIngredient",
+			"itemType": "5",
+			"itemClass": "4",
+			"itemSort": "4",
+			"iconSource": "KIT/Food.swf",
+			"iconLabel": "food_ingrsack",
+			"iconColor": "#8f6e56"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicCharm_Normal",
+					"KIT_MagicCharm_DispelNormal"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoTarget",
+			"magicTypeDisplayDummy": "$MagicInfoPacify",
+			"magicClassDisplay": "$MagicInfoTarget",
+			"magicTypeDisplay": "$MagicInfoPacify"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicCharm_NormalRune",
+					"KIT_MagicCharm_DispelNormalRune"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoTarget",
+			"magicTypeDisplayDummy": "$MagicInfoPacify",
+			"magicClassDisplay": "$MagicInfoTarget",
+			"magicTypeDisplay": "$MagicInfoPacify",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "rune_illusion"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicCommand_Normal",
+					"KIT_MagicCommand_DispelNormal"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoTarget",
+			"magicTypeDisplayDummy": "$MagicInfoCommand",
+			"magicClassDisplay": "$MagicInfoTarget",
+			"magicTypeDisplay": "$MagicInfoCommand",
+			"iconColor": "#bf4b40"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicCommand_NormalRune",
+					"KIT_MagicCommand_DispelNormalRune"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoTarget",
+			"magicTypeDisplayDummy": "$MagicInfoCommand",
+			"magicClassDisplay": "$MagicInfoTarget",
+			"magicTypeDisplay": "$MagicInfoCommand",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "rune_illusion",
+			"iconColor": "#bf4b40"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicDamage_Arcane",
+					"KIT_MagicDamage_DispelArcane"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$Damage",
+			"magicTypeDisplayDummy": "$MagicInfoArcane",
+			"magicClassDisplay": "$Damage",
+			"magicTypeDisplay": "$MagicInfoArcane",
+			"iconColor": "#6abfc7"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicDamage_AshFire",
+					"KIT_MagicDamage_DispelAshFire"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$Damage",
+			"magicTypeDisplayDummy": "$MagicInfoAshFire",
+			"magicClassDisplay": "$Damage",
+			"magicTypeDisplay": "$MagicInfoAshFire",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_fire",
+			"iconColor": "#cc4f35"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicDamage_ColdFire",
+					"KIT_MagicDamage_DispelColdFire"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$Damage",
+			"magicTypeDisplayDummy": "$MagicInfoColdFire",
+			"magicClassDisplay": "$Damage",
+			"magicTypeDisplay": "$MagicInfoColdFire",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_fire",
+			"iconColor": "#4eb5fd"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicDamage_Fire",
+					"KIT_MagicDamage_DispelFire"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$Damage",
+			"magicTypeDisplayDummy": "$MagicInfoFire",
+			"magicClassDisplay": "$Damage",
+			"magicTypeDisplay": "$MagicInfoFire",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_fire",
+			"iconColor": "#d2902d"
+		}
+	},
+    {
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicDamage_Fire" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$Damage",
+			"miscTypeDisplay": "$MagicInfoFire",
+			"iconColor": "#d2902d"
+		}
+	},
+    {
+		"match": {
+			"formType": "Scroll",
+			"keywords": [ "KIT_MagicDamage_Fire" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$Damage",
+			"miscTypeDisplay": "$MagicInfoFire",
+			"iconColor": "#d2902d"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicDamage_Frost",
+					"KIT_MagicDamage_DispelFrost"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$Damage",
+			"magicTypeDisplayDummy": "$MagicInfoFrost",
+			"magicClassDisplay": "$Damage",
+			"magicTypeDisplay": "$MagicInfoFrost",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_frost",
+			"iconColor": "#a3e5f5"
+		}
+	},
+    {
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicDamage_Frost" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$Damage",
+			"miscTypeDisplay": "$MagicInfoFrost",
+			"iconColor": "#a3e5f5"
+		}
+	},
+    {
+		"match": {
+			"formType": "Scroll",
+			"keywords": [ "KIT_MagicDamage_Frost" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$Damage",
+			"miscTypeDisplay": "$MagicInfoFrost",
+			"iconColor": "#a3e5f5"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicDamage_Poison",
+					"KIT_MagicDamage_DispelPoison"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$Damage",
+			"magicTypeDisplayDummy": "$MagicInfoPoison",
+			"magicClassDisplay": "$Damage",
+			"magicTypeDisplay": "$MagicInfoPoison",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_poison",
+			"iconColor": "#8abf40"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicDamage_Shadow",
+					"KIT_MagicDamage_DispelShadow"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$Damage",
+			"magicTypeDisplayDummy": "$MagicInfoShadow",
+			"magicClassDisplay": "$Damage",
+			"magicTypeDisplay": "$MagicInfoShadow",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "default_destruction",
+			"iconColor": "#6a55d5"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicDamage_Shock",
+					"KIT_MagicDamage_DispelShock"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$Damage",
+			"magicTypeDisplayDummy": "$MagicInfoShock",
+			"magicClassDisplay": "$Damage",
+			"magicTypeDisplay": "$MagicInfoShock",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_shock",
+			"iconColor": "#e9d262"
+		}
+	},
+    {
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicDamage_Shock" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$Damage",
+			"miscTypeDisplay": "$MagicInfoShock",
+			"iconColor": "#e9d262"
+		}
+	},
+    {
+		"match": {
+			"formType": "Scroll",
+			"keywords": [ "KIT_MagicDamage_Shock" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$Damage",
+			"miscTypeDisplay": "$MagicInfoShock",
+			"iconColor": "#e9d262"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicDamage_ShockArc",
+					"KIT_MagicDamage_DispelShockArc"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$Damage",
+			"magicTypeDisplayDummy": "$MagicInfoShockArc",
+			"magicClassDisplay": "$Damage",
+			"magicTypeDisplay": "$MagicInfoShockArc",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_shock",
+			"iconColor": "#cc4f35"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicDamage_Sun",
+					"KIT_MagicDamage_DispelSun"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$Damage",
+			"magicTypeDisplayDummy": "$MagicInfoSun",
+			"magicClassDisplay": "$Damage",
+			"magicTypeDisplay": "$MagicInfoSun",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_sun",
+			"iconColor": "#ecb279"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": [ "KIT_MagicEnhance_Armor" ]
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoEnhance",
+			"magicTypeDisplayDummy": "$MagicInfoArmor",
+			"magicClassDisplay": "$MagicInfoEnhance",
+			"magicTypeDisplay": "$MagicInfoArmor",
+			"iconSource": "KIT/Armor.swf",
+			"iconLabel": "armor_shield",
+			"iconColor": "#7d3f35"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicEnhance_ResistFire",
+					"KIT_MagicEnhance_DispelResistFire"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoEnhance",
+			"magicTypeDisplayDummy": "$MagicInfoResistance",
+			"magicClassDisplay": "$MagicInfoEnhance",
+			"magicTypeDisplay": "$MagicInfoResistance",
+			"subTypeKimari": "$MagicInfoFire",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_resistance",
+			"iconColor": "#d2902d"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicEnhance_ResistFrost",
+					"KIT_MagicEnhance_DispelResistFrost"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoEnhance",
+			"magicTypeDisplayDummy": "$MagicInfoResistance",
+			"magicClassDisplay": "$MagicInfoEnhance",
+			"magicTypeDisplay": "$MagicInfoResistance",
+			"subTypeKimari": "$MagicInfoFrost",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_resistance",
+			"iconColor": "#a3e5f5"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicEnhance_ResistMagic",
+					"KIT_MagicEnhance_DispelResistMagic"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoEnhance",
+			"magicTypeDisplayDummy": "$MagicInfoResistance",
+			"magicClassDisplay": "$MagicInfoEnhance",
+			"magicTypeDisplay": "$MagicInfoResistance",
+			"subTypeKimari": "$MagicInfoMagic",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_resistance",
+			"iconColor": "#6a76fb"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicEnhance_ResistPoison",
+					"KIT_MagicEnhance_DispelResistPoison"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoEnhance",
+			"magicTypeDisplayDummy": "$MagicInfoResistance",
+			"magicClassDisplay": "$MagicInfoEnhance",
+			"magicTypeDisplay": "$MagicInfoResistance",
+			"subTypeKimari": "$MagicInfoPoison",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_resistance",
+			"iconColor": "#8ed65c"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicEnhance_ResistShock",
+					"KIT_MagicEnhance_DispelResistShock"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoEnhance",
+			"magicTypeDisplayDummy": "$MagicInfoResistance",
+			"magicClassDisplay": "$MagicInfoEnhance",
+			"magicTypeDisplay": "$MagicInfoResistance",
+			"subTypeKimari": "$MagicInfoShock",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_resistance",
+			"iconColor": "#e9d262"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"school": "Alteration",
+			"effectKeywords": [ "KIT_MagicEnhance_Speed_A" ]
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoEnhance",
+			"magicTypeDisplayDummy": "$MagicInfoSpeed",
+			"magicClassDisplay": "$MagicInfoEnhance",
+			"magicTypeDisplay": "$MagicInfoSpeed",
+			"iconColor": "#b2b2b2"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicRestore_Health",
+					"KIT_MagicRestore_DispelHealth",
+					"KIT_MagicRestore_DispelHealthCircle"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoRestore",
+			"magicTypeDisplayDummy": "$Health",
+			"magicClassDisplay": "$MagicInfoRestore",
+			"magicTypeDisplay": "$Health",
+			"subTypeKimari": "$Health",
+			"iconColor": "#ecb279"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicRestore_HealthAstral",
+					"KIT_MagicRestore_DispelHealthAstral",
+					"KIT_MagicRestore_DispelHealthCircleAstral"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoRestore",
+			"magicTypeDisplayDummy": "$Health",
+			"magicClassDisplay": "$MagicInfoRestore",
+			"magicTypeDisplay": "$Health",
+			"subTypeKimari": "$MagicInfoAstral",
+			"iconColor": "#6a55d5"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicRestore_Magicka",
+					"KIT_MagicRestore_DispelMagicka",
+					"KIT_MagicRestore_DispelMagickaCircle"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoRestore",
+			"magicTypeDisplayDummy": "$Magicka",
+			"magicClassDisplay": "$MagicInfoRestore",
+			"magicTypeDisplay": "$Magicka",
+			"iconColor": "#6975fc"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicRestore_Stamina",
+					"KIT_MagicRestore_DispelStamina",
+					"KIT_MagicRestore_DispelStaminaCircle"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoRestore",
+			"magicTypeDisplayDummy": "$Stamina",
+			"magicClassDisplay": "$MagicInfoRestore",
+			"magicTypeDisplay": "$Stamina",
+			"iconColor": "#33cc4c"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": [ "KIT_MagicSummon_Fire" ]
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoSummon",
+			"magicTypeDisplayDummy": "$MagicInfoDaedra",
+			"magicClassDisplay": "$MagicInfoSummon",
+			"magicTypeDisplay": "$MagicInfoDaedra",
+			"subTypeKimari": "$MagicInfoFire",
+			"iconColor": "#d2902d"
+		}
+	},
+    {
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicSummon_Fire" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoSummon",
+			"miscTypeDisplay": "$MagicInfoDaedra",
+			"subTypeKimari": "$MagicInfoFire",
+			"iconColor": "#d2902d"
+		}
+	},
+    {
+		"match": {
+			"formType": "Scroll",
+			"keywords": [ "KIT_MagicSummon_Fire" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoSummon",
+			"miscTypeDisplay": "$MagicInfoDaedra",
+			"subTypeKimari": "$MagicInfoFire",
+			"iconColor": "#d2902d"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": [ "KIT_MagicSummon_Frost" ]
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoSummon",
+			"magicTypeDisplayDummy": "$MagicInfoDaedra",
+			"magicClassDisplay": "$MagicInfoSummon",
+			"magicTypeDisplay": "$MagicInfoDaedra",
+			"subTypeKimari": "$MagicInfoFrost",
+			"iconColor": "#a3e5f5"
+		}
+	},
+    {
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicSummon_Frost" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoSummon",
+			"miscTypeDisplay": "$MagicInfoDaedra",
+			"subTypeKimari": "$MagicInfoFrost",
+			"iconColor": "#a3e5f5"
+		}
+	},
+    {
+		"match": {
+			"formType": "Scroll",
+			"keywords": [ "KIT_MagicSummon_Frost" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoSummon",
+			"miscTypeDisplay": "$MagicInfoDaedra",
+			"subTypeKimari": "$MagicInfoFrost",
+			"iconColor": "#a3e5f5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": [ "KIT_MagicSummon_Shock" ]
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoSummon",
+			"magicTypeDisplayDummy": "$MagicInfoDaedra",
+			"magicClassDisplay": "$MagicInfoSummon",
+			"magicTypeDisplay": "$MagicInfoDaedra",
+			"subTypeKimari": "$MagicInfoShock",
+			"iconColor": "#e9d262"
+		}
+	},
+    {
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicSummon_Shock" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoSummon",
+			"miscTypeDisplay": "$MagicInfoDaedra",
+			"subTypeKimari": "$MagicInfoShock",
+			"iconColor": "#e9d262"
+		}
+	},
+    {
+		"match": {
+			"formType": "Scroll",
+			"keywords": [ "KIT_MagicSummon_Shock" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoSummon",
+			"miscTypeDisplay": "$MagicInfoDaedra",
+			"subTypeKimari": "$MagicInfoShock",
+			"iconColor": "#e9d262"
+		}
+	},
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"effectKeywords": [ "KIT_MagicWard_Normal" ]
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoDefense",
+			"magicTypeDisplayDummy": "$MagicInfoWard",
+			"magicClassDisplay": "$MagicInfoDefense",
+			"magicTypeDisplay": "$MagicInfoWard",
+			"iconColor": "#a3c5f5"
+		}
+	}
+]	
+}

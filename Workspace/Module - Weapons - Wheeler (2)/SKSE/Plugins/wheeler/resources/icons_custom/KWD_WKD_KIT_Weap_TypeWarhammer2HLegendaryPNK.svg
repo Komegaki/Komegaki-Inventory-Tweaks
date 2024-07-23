@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="warhammer_two_handed.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1.1131408"
+     inkscape:cx="233.57334"
+     inkscape:cy="289.72077"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(0.44489368,0,0,0.44500407,181.38021,26.199898)"
+       id="g4" />
+    <path
+       d="m 311.40096,196.61561 q -13.56814,13.6769 -30.80701,-3.45321 l -48.8616,48.8616 219.34699,219.21105 7.61338,-7.72215 16.64068,16.64068 L 433.48698,512 l -16.64067,-16.64068 7.23271,-7.25991 -219.3198,-219.21104 -50.76495,50.76495 -29.82815,-29.82815 -34.722465,34.83123 -52.77706,-52.91301 34.69527,-34.83123 -30.07286,-30.07286 50.76495,-50.76495 -10.93064,-10.93065 26.973135,-26.86436 10.95783,10.93064 48.8344,-48.861602 -1.52267,-1.549867 Q 149.12713,61.559636 162.66809,47.882739 L 210.57802,-1.5e-6 359.31089,148.70568 311.40096,196.61561"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       stroke="none"
+       id="path4"
+       style="fill:#ac3aac;stroke-width:0.543813" />
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="512"
+   width="512"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="KWD_KIT_Food_Fruit.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.89358162"
+     inkscape:cx="251.79569"
+     inkscape:cy="348.59714"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <g
+     transform="matrix(0.96463336,0,0,0.96463336,61.736704,-10.633201)"
+     id="g1">
+    <path
+       d="m 398.55,356.6 c -16.83333,64.43333 -41.7,108.01667 -74.6,130.75 C 290.98333,510.31667 250.16667,504.9 201.5,471.1 152.7,504.9 111.81667,510.31667 78.85,487.35 45.95,464.61667 21.05,421.03333 4.15,356.6 -12.55,292.23333 -5.7666667,237.46667 24.5,192.3 c 28,-41.93333 80.78333,-52 158.35,-30.2 l 10.5,2.95 8.15,2.6 c 6.9,-2.26667 13.65,-4.3 20.25,-6.1 76.6,-21.2 128.81667,-10.95 156.65,30.75 30.2,45.16667 36.91667,99.93333 20.15,164.3 M 294.85,62.2 c -28.56667,24.666667 -50.6,52.31667 -66.1,82.95 l -5.25,1.5 c -7.26667,2 -14.6,4.21667 -22,6.65 l -5.5,-1.65 c 1.23333,-5.7 2.63333,-11.23333 4.2,-16.6 1.83333,-6.53333 3.83333,-12.88333 6,-19.05 12.26667,-35.366667 29.51667,-65.15 51.75,-89.35 18.26667,5.933333 30.56667,17.783333 36.9,35.55 m -108.55,68.7 -0.75,2.5 C 112.91667,120.6 73.516667,89.833333 67.35,41.1 c 60.16667,0 102.9,20.65 128.2,61.95 -1.13333,2.83333 -2.21667,5.75 -3.25,8.75 -2.16667,6.16667 -4.16667,12.53333 -6,19.1"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       stroke="none"
+       id="path1"
+       style="fill:#842e2e;fill-opacity:1"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccc" />
+  </g>
+</svg>
