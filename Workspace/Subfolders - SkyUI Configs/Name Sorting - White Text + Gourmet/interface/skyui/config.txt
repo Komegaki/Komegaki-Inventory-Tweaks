@@ -1,0 +1,1331 @@
+; =====================================================================================================================
+[Input]
+; =====================================================================================================================
+controls.pc.search = 57 ; 57 = SPACE.
+controls.pc.switchTab = 56 ; 56 = ALT.
+controls.pc.equipMode = 42 ; 42 = LSHIFT.
+
+controls.gamepad.switchTab = 271 ; 271 = BACK.
+controls.gamepad.prevColumn = 274 ; 274 = LEFT_SHOULDER.
+controls.gamepad.nextColumn = 275 ; 275 = RIGHT_SHOULDER.
+controls.gamepad.sortOrder = 272 ; 272 = LEFT_THUMB.
+
+
+; =====================================================================================================================
+[SearchBox]
+; =====================================================================================================================
+autoupdate.enable = true
+autoupdate.delay = 0
+
+
+; =====================================================================================================================
+[ItemInfo]
+; =====================================================================================================================
+itemcard.align = center
+itemcard.xOffset = 0
+itemcard.yOffset = 0
+
+
+; =====================================================================================================================
+[ItemList] 
+; =====================================================================================================================
+quantityMenu.minCount = 6 ; Number of items required to trigger quantity dialog. 0 is disabled
+
+
+; =====================================================================================================================
+[Appearance] 
+; =====================================================================================================================
+icons.category.source = 'skyui/icons_category_psychosteve.swf'
+
+icons.item.source = 'skyui/icons_item_psychosteve.swf'
+icons.item.noColor = false
+icons.item.showStolen = true
+
+colors.text.enabled = 0xffffff
+colors.stolen.enabled = 0xffffff
+colors.negative.enabled = 0xff0000
+colors.text.disabled = 0x4c4c4c
+colors.stolen.disabled = 0x4c4c4c
+colors.negative.disabled = 0x800000
+
+
+; =====================================================================================================================
+[ListLayout]
+; =====================================================================================================================
+vars.a_textBorder.value = <0, 0, 1.1, 0> ; left right top bottom
+vars.a_iconBorder.value = <0, 3, 3, 3>
+vars.a_equipBorder.value = <0, 10, 3, 3>
+vars.n_iconSize.value = 18
+
+defaults.entryWidth = 535
+
+defaults.entry.textFormat.font = '$EverywhereMediumFont'
+defaults.entry.textFormat.align = right
+defaults.entry.textFormat.bold = false
+defaults.entry.textFormat.italic = false
+defaults.entry.textFormat.underline = false
+defaults.entry.textFormat.size = 15
+defaults.entry.textFormat.letterSpacing = 0.8
+defaults.entry.textFormat.kerning = false
+defaults.entry.textFormat.leftMargin = 0
+defaults.entry.textFormat.rightMargin = 0
+defaults.entry.textFormat.indent = 0
+defaults.entry.textFormat.leading = 0
+
+defaults.label.textFormat.font = '$EverywhereMediumFont'
+defaults.label.textFormat.align = right
+defaults.label.textFormat.bold = false
+defaults.label.textFormat.italic = false
+defaults.label.textFormat.underline = false
+defaults.label.textFormat.size = 12
+defaults.label.textFormat.letterSpacing = 0.8
+defaults.label.textFormat.kerning = false
+defaults.label.textFormat.leftMargin = 0
+defaults.label.textFormat.rightMargin = 0
+defaults.label.textFormat.indent = 8
+defaults.label.textFormat.leading = 0
+
+
+; =====================================================================================================================
+; COLUMNS
+; =====================================================================================================================
+
+
+; ALL --- EQUIP ICON COLUMN -------------------------------------------------------
+columns.equipColumn.type = EQUIP_ICON
+columns.equipColumn.passive = true
+columns.equipColumn.states = 1
+columns.equipColumn.indent = -28
+columns.equipColumn.icon.size = n_iconSize
+columns.equipColumn.border = a_equipBorder
+
+columns.equipColumn.state1.label.text = ' '
+
+
+; ITEMS --- ICON COLUMN -------------------------------------------------------
+columns.itemIconColumn.type = ITEM_ICON
+columns.itemIconColumn.states = 4
+columns.itemIconColumn.border = a_iconBorder
+columns.itemIconColumn.icon.size = n_iconSize
+
+columns.itemIconColumn.state1.label.text = 'KIT'
+columns.itemIconColumn.state1.sortAttributes = <itemSortingMaster>
+columns.itemIconColumn.state1.sortOptions = {ASCENDING | CASEINSENSITIVE}
+
+columns.itemIconColumn.state2.label.text = '$DispInfoEquippedShort'
+columns.itemIconColumn.state2.sortAttributes = <isEquipped, equipState, itemSortingMaster>
+columns.itemIconColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+columns.itemIconColumn.state2.playerOnly = true
+
+columns.itemIconColumn.state3.label.text = '$DispInfoStolenShort'
+columns.itemIconColumn.state3.sortAttributes = <isStolen, itemSortingMaster>
+columns.itemIconColumn.state3.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+columns.itemIconColumn.state3.playerOnly = true
+
+columns.itemIconColumn.state4.label.text = '$DispInfoEnchantedShort'
+columns.itemIconColumn.state4.sortAttributes = <isEnchanted, itemSortingMaster>
+columns.itemIconColumn.state4.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+columns.itemIconColumn.state4.playerOnly = true
+
+
+; ITEMS --- NAME COLUMN -------------------------------------------------------
+columns.itemNameColumn.type = NAME
+columns.itemNameColumn.name = '$NAME'
+columns.itemNameColumn.states = 4
+columns.itemNameColumn.weight = 1.0
+columns.itemNameColumn.border = a_textBorder
+columns.itemNameColumn.label.textFormat.align = left
+
+columns.itemNameColumn.state1.label.text = '$NAME'
+columns.itemNameColumn.state1.entry.text = @text
+columns.itemNameColumn.state1.sortAttributes = <text>
+columns.itemNameColumn.state1.sortOptions = {ASCENDING | CASEINSENSITIVE}
+
+columns.itemNameColumn.state2.label.text = '$EQUIPPED'
+columns.itemNameColumn.state2.entry.text = @text
+columns.itemNameColumn.state2.sortAttributes = <isEquipped, equipState, text>
+columns.itemNameColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+columns.itemNameColumn.state2.playerOnly = true
+
+columns.itemNameColumn.state3.label.text = '$STOLEN'
+columns.itemNameColumn.state3.entry.text = @text
+columns.itemNameColumn.state3.sortAttributes = <isStolen, text>
+columns.itemNameColumn.state3.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+columns.itemNameColumn.state3.playerOnly = true
+
+columns.itemNameColumn.state4.label.text = '$ENCHANTED'
+columns.itemNameColumn.state4.entry.text = @text
+columns.itemNameColumn.state4.sortAttributes = <isEnchanted, text>
+columns.itemNameColumn.state4.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+columns.itemNameColumn.state4.playerOnly = true
+
+
+; ITEM --- SUBTYPE COLUMN -------------------------------------------------------
+columns.subTypeColumn.type = TEXT
+columns.subTypeColumn.name = '$TYPE'
+columns.subTypeColumn.states = 2
+columns.subTypeColumn.width = 0.14
+columns.subTypeColumn.border = a_textBorder
+columns.subTypeColumn.hidden = false
+
+columns.subTypeColumn.state1.label.text = '$TYPE'
+columns.subTypeColumn.state1.entry.text = @subTypeDisplay
+columns.subTypeColumn.state1.sortAttributes = <subTypeDisplay, text>
+columns.subTypeColumn.state1.sortOptions = <{ASCENDING | CASEINSENSITIVE}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.subTypeColumn.state2.label.text = '$TYPE'
+columns.subTypeColumn.state2.entry.text = @subTypeDisplay
+columns.subTypeColumn.state2.label.arrowDown = true
+columns.subTypeColumn.state2.sortAttributes = <subTypeDisplay, text>
+columns.subTypeColumn.state2.sortOptions = <{DESCENDING | CASEINSENSITIVE}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; ITEMS --- WEIGHT COLUMN -------------------------------------------------------
+columns.itemWeightColumn.type = TEXT
+columns.itemWeightColumn.name = '$WEIGHT'
+columns.itemWeightColumn.states = 2
+columns.itemWeightColumn.width = 0.08
+columns.itemWeightColumn.border = a_textBorder
+columns.itemWeightColumn.hidden = false
+
+columns.itemWeightColumn.state1.label.text = '$WGT'
+columns.itemWeightColumn.state1.label.arrowDown = true
+columns.itemWeightColumn.state1.entry.text = @infoWeight
+columns.itemWeightColumn.state1.sortAttributes = <infoWeight, text>
+columns.itemWeightColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.itemWeightColumn.state2.label.text = '$WGT'
+columns.itemWeightColumn.state2.label.arrowDown = false
+columns.itemWeightColumn.state2.entry.text = @infoWeight
+columns.itemWeightColumn.state2.sortAttributes = <infoWeight, text>
+columns.itemWeightColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; ITEMS --- VALUE COLUMN -------------------------------------------------------
+columns.itemValColumn.type = TEXT
+columns.itemValColumn.name = '$VALUE'
+columns.itemValColumn.states = 2
+columns.itemValColumn.width = 0.08
+columns.itemValColumn.border = a_textBorder
+columns.itemValColumn.hidden = false
+
+columns.itemValColumn.state1.label.text = '$VAL'
+columns.itemValColumn.state1.label.arrowDown = true
+columns.itemValColumn.state1.entry.text = @infoValue
+columns.itemValColumn.state1.sortAttributes = <infoValue, text>
+columns.itemValColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.itemValColumn.state2.label.text = '$VAL'
+columns.itemValColumn.state2.label.arrowDown = false
+columns.itemValColumn.state2.entry.text = @infoValue
+columns.itemValColumn.state2.sortAttributes = <infoValue, text>
+columns.itemValColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; ITEMS --- VALUE/WEIGHT COLUMN -------------------------------------------------------
+columns.itemValWtColumn.type = TEXT
+columns.itemValWtColumn.name = '$VALUE/WEIGHT'
+columns.itemValWtColumn.states = 2
+columns.itemValWtColumn.width = 0.08
+columns.itemValWtColumn.border = a_textBorder
+columns.itemValWtColumn.hidden = false
+
+columns.itemValWtColumn.state1.label.text = '$V/W'
+columns.itemValWtColumn.state1.label.arrowDown = true
+columns.itemValWtColumn.state1.entry.text = @infoValueWeight
+columns.itemValWtColumn.state1.sortAttributes = <infoValueWeight, text>
+columns.itemValWtColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.itemValWtColumn.state2.label.text = '$V/W'
+columns.itemValWtColumn.state2.label.arrowDown = false
+columns.itemValWtColumn.state2.entry.text = @infoValueWeight
+columns.itemValWtColumn.state2.sortAttributes = <infoValueWeight, text>
+columns.itemValWtColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; ITEMS --- TOTAL WEIGHT COLUMN -------------------------------------------------------
+columns.itemTWtColumn.type = TEXT
+columns.itemTWtColumn.name = '$DispInfoTotalWeight'
+columns.itemTWtColumn.states = 2
+columns.itemTWtColumn.width = 0.08
+columns.itemTWtColumn.border = a_textBorder
+columns.itemTWtColumn.hidden = true
+
+columns.itemTWtColumn.state1.label.text = '$DispInfoTotalWeightShort'
+columns.itemTWtColumn.state1.label.arrowDown = true
+columns.itemTWtColumn.state1.entry.text = @infoTotalWeight
+columns.itemTWtColumn.state1.sortAttributes = <infoTotalWeight, text>
+columns.itemTWtColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.itemTWtColumn.state2.label.text = '$DispInfoTotalWeightShort'
+columns.itemTWtColumn.state2.label.arrowDown = false
+columns.itemTWtColumn.state2.entry.text = @infoTotalWeight
+columns.itemTWtColumn.state2.sortAttributes = <infoTotalWeight, text>
+columns.itemTWtColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; WEAPONS --- EQUIPPED HAND COLUMN -------------------------------------------------------
+columns.weaponEquippedHandColumn.type = TEXT
+columns.weaponEquippedHandColumn.name = '$DispInfoEquippedHand'
+columns.weaponEquippedHandColumn.states = 2
+columns.weaponEquippedHandColumn.width = 0.08
+columns.weaponEquippedHandColumn.border = a_textBorder
+columns.weaponEquippedHandColumn.hidden = true
+
+columns.weaponEquippedHandColumn.state1.label.text = '$DispInfoEquippedHandShort'
+columns.weaponEquippedHandColumn.state1.label.arrowDown = false
+columns.weaponEquippedHandColumn.state1.entry.text = @equipTypeDisplay
+columns.weaponEquippedHandColumn.state1.sortAttributes = <equipType, text>
+columns.weaponEquippedHandColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.weaponEquippedHandColumn.state2.label.text = '$DispInfoEquippedHandShort'
+columns.weaponEquippedHandColumn.state2.label.arrowDown = true
+columns.weaponEquippedHandColumn.state2.entry.text = @equipTypeDisplay
+columns.weaponEquippedHandColumn.state2.sortAttributes = <equipType, text>
+columns.weaponEquippedHandColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; WEAPONS --- DAMAGE COLUMN -------------------------------------------------------
+columns.infoDamageColumn.type = TEXT
+columns.infoDamageColumn.name = '$DAMAGE'
+columns.infoDamageColumn.states = 2
+columns.infoDamageColumn.width = 0.08
+columns.infoDamageColumn.border = a_textBorder
+columns.infoDamageColumn.hidden = false
+
+columns.infoDamageColumn.state1.label.text = '$DAM'
+columns.infoDamageColumn.state1.label.arrowDown = true
+columns.infoDamageColumn.state1.entry.text = @infoDamage
+columns.infoDamageColumn.state1.sortAttributes = <infoDamage, text>
+columns.infoDamageColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.infoDamageColumn.state2.label.text = '$DAM'
+columns.infoDamageColumn.state2.label.arrowDown = false
+columns.infoDamageColumn.state2.entry.text = @infoDamage
+columns.infoDamageColumn.state2.sortAttributes = <infoDamage, text>
+columns.infoDamageColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; WEAPONS --- BASE DAMAGE COLUMN -------------------------------------------------------
+columns.weaponBaseDamageColumn.type = TEXT
+columns.weaponBaseDamageColumn.name = '$DispInfoBaseWeaponDamage'
+columns.weaponBaseDamageColumn.states = 2
+columns.weaponBaseDamageColumn.width = 0.08
+columns.weaponBaseDamageColumn.border = a_textBorder
+columns.weaponBaseDamageColumn.hidden = true
+
+columns.weaponBaseDamageColumn.state1.label.text = '$DispInfoBaseWeaponDamageShort'
+columns.weaponBaseDamageColumn.state1.label.arrowDown = true
+columns.weaponBaseDamageColumn.state1.entry.text = @infoBaseDamage
+columns.weaponBaseDamageColumn.state1.sortAttributes = <infoBaseDamage, text>
+columns.weaponBaseDamageColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.weaponBaseDamageColumn.state2.label.text = '$DispInfoBaseWeaponDamageShort'
+columns.weaponBaseDamageColumn.state2.label.arrowDown = false
+columns.weaponBaseDamageColumn.state2.entry.text = @infoBaseDamage
+columns.weaponBaseDamageColumn.state2.sortAttributes = <infoBaseDamage, text>
+columns.weaponBaseDamageColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; ARMOR --- ARMOR RATING COLUMN -------------------------------------------------------
+columns.armorRatingColumn.type = TEXT
+columns.armorRatingColumn.name = '$ARMOR'
+columns.armorRatingColumn.states = 2
+columns.armorRatingColumn.width = 0.08
+columns.armorRatingColumn.border = a_textBorder
+columns.armorRatingColumn.hidden = false
+
+columns.armorRatingColumn.state1.label.text = '$ARM'
+columns.armorRatingColumn.state1.label.arrowDown = true
+columns.armorRatingColumn.state1.entry.text = @infoArmor
+columns.armorRatingColumn.state1.sortAttributes = <infoArmor, text>
+columns.armorRatingColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.armorRatingColumn.state2.label.text = '$ARM'
+columns.armorRatingColumn.state2.label.arrowDown = false
+columns.armorRatingColumn.state2.entry.text = @infoArmor
+columns.armorRatingColumn.state2.sortAttributes = <infoArmor, text>
+columns.armorRatingColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; ARMOR --- CLASS COLUMN -------------------------------------------------------
+columns.armorClassColumn.type = TEXT
+columns.armorClassColumn.name = '$CLASS'
+columns.armorClassColumn.states = 2
+columns.armorClassColumn.width = 0.10
+columns.armorClassColumn.border = a_textBorder
+columns.armorClassColumn.hidden = true
+
+columns.armorClassColumn.state1.label.text = '$CLASS'
+columns.armorClassColumn.state1.label.arrowDown = false
+columns.armorClassColumn.state1.entry.text = @weightClassDisplay
+columns.armorClassColumn.state1.sortAttributes = <armorClass, text>
+columns.armorClassColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.armorClassColumn.state2.label.text = '$CLASS'
+columns.armorClassColumn.state2.label.arrowDown = true
+columns.armorClassColumn.state2.entry.text = @weightClassDisplay
+columns.armorClassColumn.state2.sortAttributes = <armorClass, text>
+columns.armorClassColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; POTIONS --- ICON COLUMN -------------------------------------------------------
+columns.potionIconColumn.type = ITEM_ICON
+columns.potionIconColumn.states = 2
+columns.potionIconColumn.icon.size = n_iconSize
+columns.potionIconColumn.border = a_iconBorder
+
+columns.potionIconColumn.state1.label.text = 'KIT'
+columns.potionIconColumn.state1.label.arrowDown = false
+columns.potionIconColumn.state1.sortAttributes = <potionSortingMaster>
+columns.potionIconColumn.state1.sortOptions = {DESCENDING | NUMERIC}
+
+columns.potionIconColumn.state2.label.text = 'KIT'
+columns.potionIconColumn.state2.label.arrowDown = true
+columns.potionIconColumn.state2.sortAttributes = <potionSortingMaster>
+columns.potionIconColumn.state2.sortOptions = {ASCENDING | NUMERIC}
+
+
+; POTIONS --- NAME COLUMN -------------------------------------------------------
+columns.potionNameColumn.type = NAME
+columns.potionNameColumn.name = '$NAME'
+columns.potionNameColumn.states = 2
+columns.potionNameColumn.weight = 1.0
+columns.potionNameColumn.border = a_textBorder
+columns.potionNameColumn.label.textFormat.align = left
+
+columns.potionNameColumn.state1.label.text = '$NAME'
+columns.potionNameColumn.state1.entry.text = @text
+columns.potionNameColumn.state1.label.arrowDown = false
+columns.potionNameColumn.state1.sortAttributes = <text>
+columns.potionNameColumn.state1.sortOptions = {ASCENDING | CASEINSENSITIVE}
+
+columns.potionNameColumn.state2.label.text = '$NAME'
+columns.potionNameColumn.state2.entry.text = @text
+columns.potionNameColumn.state2.label.arrowDown = true
+columns.potionNameColumn.state2.sortAttributes = <text>
+columns.potionNameColumn.state2.sortOptions = {DESCENDING | CASEINSENSITIVE}
+
+
+; FOOD --- ICON COLUMN -------------------------------------------------------
+columns.foodIconColumn.type = ITEM_ICON
+columns.foodIconColumn.states = 2
+columns.foodIconColumn.icon.size = n_iconSize
+columns.foodIconColumn.border = a_iconBorder
+
+columns.foodIconColumn.state1.label.text = 'KIT'
+columns.foodIconColumn.state1.label.arrowDown = false
+columns.foodIconColumn.state1.sortAttributes = <foodSortingMaster>
+columns.foodIconColumn.state1.sortOptions = {DESCENDING | NUMERIC}
+
+columns.foodIconColumn.state2.label.text = 'KIT'
+columns.foodIconColumn.state2.label.arrowDown = true
+columns.foodIconColumn.state2.sortAttributes = <foodSortingMaster>
+columns.foodIconColumn.state2.sortOptions = {ASCENDING | NUMERIC}
+
+
+; FOOD --- NAME COLUMN -------------------------------------------------------
+columns.foodNameColumn.type = NAME
+columns.foodNameColumn.name = '$NAME'
+columns.foodNameColumn.states = 2
+columns.foodNameColumn.weight = 1.0
+columns.foodNameColumn.border = a_textBorder
+columns.foodNameColumn.label.textFormat.align = left
+
+columns.foodNameColumn.state1.label.text = '$NAME'
+columns.foodNameColumn.state1.entry.text = @text
+columns.foodNameColumn.state1.label.arrowDown = false
+columns.foodNameColumn.state1.sortAttributes = <text>
+columns.foodNameColumn.state1.sortOptions = {ASCENDING | CASEINSENSITIVE}
+
+columns.foodNameColumn.state2.label.text = '$NAME'
+columns.foodNameColumn.state2.entry.text = @text
+columns.foodNameColumn.state2.label.arrowDown = true
+columns.foodNameColumn.state2.sortAttributes = <text>
+columns.foodNameColumn.state2.sortOptions = {DESCENDING | CASEINSENSITIVE}
+
+
+; FOOD --- GOURMET STRENGTH COLUMN -------------------------------------------------------
+columns.infoGourmetColumn.type = TEXT
+columns.infoGourmetColumn.name = '$DispInfoGourmetEffect'
+columns.infoGourmetColumn.states = 2
+columns.infoGourmetColumn.width = 0.10
+columns.infoGourmetColumn.border = a_textBorder
+columns.infoGourmetColumn.hidden = true
+
+columns.infoGourmetColumn.state1.label.text = '$DispInfoGourmetEffectShort'
+columns.infoGourmetColumn.state1.label.arrowDown = false
+columns.infoGourmetColumn.state1.entry.text = @infoGourmet
+columns.infoGourmetColumn.state1.sortAttributes = <infoGourmet, text>
+columns.infoGourmetColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.infoGourmetColumn.state2.label.text = '$DispInfoGourmetEffectShort'
+columns.infoGourmetColumn.state2.label.arrowDown = true
+columns.infoGourmetColumn.state2.entry.text = @infoGourmet
+columns.infoGourmetColumn.state2.sortAttributes = <infoGourmet, text>
+columns.infoGourmetColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; TOME AND SCRL --- CLASS COLUMN -------------------------------------------------------
+columns.miscClassColumn.type = TEXT
+columns.miscClassColumn.name = '$DispInfoSpellClass'
+columns.miscClassColumn.states = 2
+columns.miscClassColumn.width = 0.12
+columns.miscClassColumn.border = a_textBorder
+columns.miscClassColumn.hidden = true
+
+columns.miscClassColumn.state1.label.text = '$DispInfoMagicEffect'
+columns.miscClassColumn.state1.label.arrowDown = false
+columns.miscClassColumn.state1.entry.text = @miscClassDisplay
+columns.miscClassColumn.state1.sortAttributes = <miscClassDisplay, text>
+columns.miscClassColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.miscClassColumn.state2.label.text = '$DispInfoMagicEffect'
+columns.miscClassColumn.state2.label.arrowDown = true
+columns.miscClassColumn.state2.entry.text = @miscClassDisplay
+columns.miscClassColumn.state2.sortAttributes = <miscClassDisplay, text>
+columns.miscClassColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; TOME AND SCRL --- TYPE COLUMN -------------------------------------------------------
+columns.miscTypeColumn.type = TEXT
+columns.miscTypeColumn.name = '$DispInfoSpellType'
+columns.miscTypeColumn.states = 2
+columns.miscTypeColumn.width = 0.12
+columns.miscTypeColumn.border = a_textBorder
+columns.miscTypeColumn.hidden = true
+
+columns.miscTypeColumn.state1.label.text = '$DispInfoMagicEffect'
+columns.miscTypeColumn.state1.label.arrowDown = false
+columns.miscTypeColumn.state1.entry.text = @miscTypeDisplay
+columns.miscTypeColumn.state1.sortAttributes = <miscTypeDisplay, text>
+columns.miscTypeColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.miscTypeColumn.state2.label.text = '$DispInfoMagicEffect'
+columns.miscTypeColumn.state2.label.arrowDown = true
+columns.miscTypeColumn.state2.entry.text = @miscTypeDisplay
+columns.miscTypeColumn.state2.sortAttributes = <miscTypeDisplay, text>
+columns.miscTypeColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; POTION, FOOD, TOME AND SCRL --- MAGNITUDE COLUMN -------------------------------------------------------
+columns.itemMagnitudeColumn.type = TEXT
+columns.itemMagnitudeColumn.name = '$MAGNITUDE'
+columns.itemMagnitudeColumn.states = 2
+columns.itemMagnitudeColumn.width = 0.08
+columns.itemMagnitudeColumn.border = a_textBorder
+columns.itemMagnitudeColumn.hidden = true
+
+columns.itemMagnitudeColumn.state1.label.text = '$MAG'
+columns.itemMagnitudeColumn.state1.label.arrowDown = true
+columns.itemMagnitudeColumn.state1.entry.text = @magnitude
+columns.itemMagnitudeColumn.state1.sortAttributes = <magnitude, text>
+columns.itemMagnitudeColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.itemMagnitudeColumn.state2.label.text = '$MAG'
+columns.itemMagnitudeColumn.state2.label.arrowDown = false
+columns.itemMagnitudeColumn.state2.entry.text = @magnitude
+columns.itemMagnitudeColumn.state2.sortAttributes = <magnitude, text>
+columns.itemMagnitudeColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; POTION, FOOD, TOME AND SCRL --- DURATION COLUMN -------------------------------------------------------
+columns.itemDurationColumn.type = TEXT
+columns.itemDurationColumn.name = '$DURATION'
+columns.itemDurationColumn.states = 2
+columns.itemDurationColumn.width = 0.08
+columns.itemDurationColumn.border = a_textBorder
+columns.itemDurationColumn.hidden = true
+
+columns.itemDurationColumn.state1.label.text = '$DUR'
+columns.itemDurationColumn.state1.label.arrowDown = true
+columns.itemDurationColumn.state1.entry.text = @duration
+columns.itemDurationColumn.state1.sortAttributes = <duration, text>
+columns.itemDurationColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.itemDurationColumn.state2.label.text = '$DUR'
+columns.itemDurationColumn.state2.label.arrowDown = false
+columns.itemDurationColumn.state2.entry.text = @duration
+columns.itemDurationColumn.state2.sortAttributes = <duration, text>
+columns.itemDurationColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; MAGIC --- ICON COLUMN -------------------------------------------------------
+columns.magicIconColumn.type = ITEM_ICON
+columns.magicIconColumn.states = 2
+columns.magicIconColumn.icon.size = n_iconSize
+columns.magicIconColumn.border = a_iconBorder
+
+columns.magicIconColumn.state1.label.text = 'KIT'
+columns.magicIconColumn.state1.sortAttributes = <magicSortingMaster>
+columns.magicIconColumn.state1.sortOptions = {ASCENDING | CASEINSENSITIVE}
+
+columns.magicIconColumn.state2.label.text = '$DispInfoFavoriteShort'
+columns.magicIconColumn.state2.sortAttributes = <favorite, magicSortingMaster>
+columns.magicIconColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; MAGIC --- NAME COLUMN -------------------------------------------------------
+columns.magicNameColumn.type = NAME
+columns.magicNameColumn.name = '$NAME'
+columns.magicNameColumn.states = 2
+columns.magicNameColumn.weight = 1.0
+columns.magicNameColumn.border = a_textBorder
+columns.magicNameColumn.label.textFormat.align = left
+
+columns.magicNameColumn.state1.label.text = '$NAME'
+columns.magicNameColumn.state1.entry.text = @text
+columns.magicNameColumn.state1.sortAttributes = <text>
+columns.magicNameColumn.state1.sortOptions = {ASCENDING | CASEINSENSITIVE}
+
+columns.magicNameColumn.state2.label.text = '$FAVORITE'
+columns.magicNameColumn.state2.entry.text = @text
+columns.magicNameColumn.state2.sortAttributes = <favorite, text>
+columns.magicNameColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+columns.magicNameColumn.state2.playerOnly = true
+
+
+; MAGIC --- CLASS COLUMN -------------------------------------------
+columns.magicClassColumn.type = TEXT
+columns.magicClassColumn.name = '$CLASS'
+columns.magicClassColumn.states = 2
+columns.magicClassColumn.width = 0.12
+columns.magicClassColumn.border = a_textBorder
+columns.magicClassColumn.hidden = false
+
+columns.magicClassColumn.state1.label.text = '$CLASS'
+columns.magicClassColumn.state1.label.arrowDown = false
+columns.magicClassColumn.state1.entry.text = @magicClassDisplayDummy
+columns.magicClassColumn.state1.sortAttributes = <magicClassDisplay, text>
+columns.magicClassColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.magicClassColumn.state2.label.text = '$CLASS'
+columns.magicClassColumn.state2.label.arrowDown = true
+columns.magicClassColumn.state2.entry.text = @magicClassDisplayDummy
+columns.magicClassColumn.state2.sortAttributes = <magicClassDisplay, text>
+columns.magicClassColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; MAGIC --- SUBTYPE COLUMN -------------------------------------------
+columns.magicSubTypeColumn.type = TEXT
+columns.magicSubTypeColumn.name = '$TYPE'
+columns.magicSubTypeColumn.states = 2
+columns.magicSubTypeColumn.width = 0.12
+columns.magicSubTypeColumn.border = a_textBorder
+columns.magicSubTypeColumn.hidden = false
+
+columns.magicSubTypeColumn.state1.label.text = '$TYPE'
+columns.magicSubTypeColumn.state1.label.arrowDown = false
+columns.magicSubTypeColumn.state1.entry.text = @magicTypeDisplay
+columns.magicSubTypeColumn.state1.sortAttributes = <magicTypeDisplay, text>
+columns.magicSubTypeColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.magicSubTypeColumn.state2.label.text = '$TYPE'
+columns.magicSubTypeColumn.state2.label.arrowDown = true
+columns.magicSubTypeColumn.state2.entry.text = @magicTypeDisplay
+columns.magicSubTypeColumn.state2.sortAttributes = <magicTypeDisplay, text>
+columns.magicSubTypeColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; MAGIC --- KIMARI COLUMN -------------------------------------------
+columns.subKimariColumn.type = TEXT
+columns.subKimariColumn.name = '$TYPE'
+columns.subKimariColumn.states = 2
+columns.subKimariColumn.width = 0.12
+columns.subKimariColumn.border = a_textBorder
+columns.subKimariColumn.hidden = true
+
+columns.subKimariColumn.state1.label.text = '$TYPE'
+columns.subKimariColumn.state1.label.arrowDown = false
+columns.subKimariColumn.state1.entry.text = @subTypeKimari
+columns.subKimariColumn.state1.sortAttributes = <subTypeKimari, text>
+columns.subKimariColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.subKimariColumn.state2.label.text = '$TYPE'
+columns.subKimariColumn.state2.label.arrowDown = true
+columns.subKimariColumn.state2.entry.text = @subTypeKimari
+columns.subKimariColumn.state2.sortAttributes = <subTypeKimari, text>
+columns.subKimariColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; MAGIC --- LEVEL COLUMN -------------------------------------------
+columns.magicLevelColumn.type = TEXT
+columns.magicLevelColumn.name = '$LEVEL'
+columns.magicLevelColumn.states = 2
+columns.magicLevelColumn.width = 0.12
+columns.magicLevelColumn.border = a_textBorder
+columns.magicLevelColumn.hidden = false
+
+columns.magicLevelColumn.state1.label.text = '$LEVEL'
+columns.magicLevelColumn.state1.label.arrowDown = true
+columns.magicLevelColumn.state1.entry.text = @infoCastLevel
+columns.magicLevelColumn.state1.sortAttributes = <infoCastLevel, text>
+columns.magicLevelColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.magicLevelColumn.state2.label.text = '$LEVEL'
+columns.magicLevelColumn.state2.label.arrowDown = false
+columns.magicLevelColumn.state2.entry.text = @infoCastLevel
+columns.magicLevelColumn.state2.sortAttributes = <infoCastLevel, text>
+columns.magicLevelColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; MAGIC --- SCHOOL COLUMN -------------------------------------------
+columns.infoSchoolColumn.type = TEXT
+columns.infoSchoolColumn.name = '$SCHOOL'
+columns.infoSchoolColumn.states = 2
+columns.infoSchoolColumn.width = 0.14
+columns.infoSchoolColumn.border = a_textBorder
+columns.infoSchoolColumn.hidden = false
+
+columns.infoSchoolColumn.state1.label.text = '$SCHOOL'
+columns.infoSchoolColumn.state1.label.arrowDown = false
+columns.infoSchoolColumn.state1.entry.text = @infoSchoolName
+columns.infoSchoolColumn.state1.sortAttributes = <infoSchoolName, text>
+columns.infoSchoolColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.infoSchoolColumn.state2.label.text = '$SCHOOL'
+columns.infoSchoolColumn.state2.label.arrowDown = true
+columns.infoSchoolColumn.state2.entry.text = @infoSchoolName
+columns.infoSchoolColumn.state2.sortAttributes = <infoSchoolName, text>
+columns.infoSchoolColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; MAGIC --- MAGNITUDE COLUMN -------------------------------------------------------
+columns.magicMagnitudeColumn.type = TEXT
+columns.magicMagnitudeColumn.name = '$MAGNITUDE'
+columns.magicMagnitudeColumn.states = 2
+columns.magicMagnitudeColumn.width = 0.08
+columns.magicMagnitudeColumn.border = a_textBorder
+columns.magicMagnitudeColumn.hidden = true
+
+columns.magicMagnitudeColumn.state1.label.text = '$MAG'
+columns.magicMagnitudeColumn.state1.label.arrowDown = true
+columns.magicMagnitudeColumn.state1.entry.text = @magnitude
+columns.magicMagnitudeColumn.state1.sortAttributes = <magnitude, text>
+columns.magicMagnitudeColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.magicMagnitudeColumn.state2.label.text = '$MAG'
+columns.magicMagnitudeColumn.state2.entry.text = @magnitude
+columns.magicMagnitudeColumn.state2.sortAttributes = <magnitude, text>
+columns.magicMagnitudeColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; MAGIC --- DURATION COLUMN -------------------------------------------------------
+columns.magicDurationColumn.type = TEXT
+columns.magicDurationColumn.name = '$TIME'
+columns.magicDurationColumn.states = 2
+columns.magicDurationColumn.width = 0.08
+columns.magicDurationColumn.border = a_textBorder
+columns.magicDurationColumn.hidden = true
+
+columns.magicDurationColumn.state1.label.text = '$TIME'
+columns.magicDurationColumn.state1.label.arrowDown = true
+columns.magicDurationColumn.state1.entry.text = @duration
+columns.magicDurationColumn.state1.sortAttributes = <duration, text>
+columns.magicDurationColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.magicDurationColumn.state2.label.text = '$TIME'
+columns.magicDurationColumn.state2.entry.text = @duration
+columns.magicDurationColumn.state2.sortAttributes = <duration, text>
+columns.magicDurationColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; SPELL --- COST COLUMN -------------------------------------------
+columns.spellCostColumn.type = TEXT
+columns.spellCostColumn.name = '$SPELL COST'
+columns.spellCostColumn.states = 2
+columns.spellCostColumn.width = 0.08
+columns.spellCostColumn.border = a_textBorder
+columns.spellCostColumn.hidden = false
+
+columns.spellCostColumn.state1.label.text = '$COST'
+columns.spellCostColumn.state1.label.arrowDown = true
+columns.spellCostColumn.state1.entry.text = @spellCostDisplay
+columns.spellCostColumn.state1.sortAttributes = <infoSpellCost, text>
+columns.spellCostColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.spellCostColumn.state2.label.text = '$COST'
+columns.spellCostColumn.state2.label.arrowDown = false
+columns.spellCostColumn.state2.entry.text = @spellCostDisplay
+columns.spellCostColumn.state2.sortAttributes = <infoSpellCost, text>
+columns.spellCostColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; SHOUT --- ICON COLUMN -------------------------------------------------------
+columns.shoutIconColumn.type = ITEM_ICON
+columns.shoutIconColumn.states = 2
+columns.shoutIconColumn.icon.size = n_iconSize
+columns.shoutIconColumn.border = a_iconBorder
+
+columns.shoutIconColumn.state1.label.text = 'KIT'
+columns.shoutIconColumn.state1.sortAttributes = <text>
+columns.shoutIconColumn.state1.sortOptions = {ASCENDING | CASEINSENSITIVE}
+
+columns.shoutIconColumn.state2.label.text = '$DispInfoFavoriteShort'
+columns.shoutIconColumn.state2.sortAttributes = <favorite, text>
+columns.shoutIconColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; SHOUTS --- WORD 1 COLUMN -------------------------------------------
+columns.word0Column.type = TEXT
+columns.word0Column.name = '$FIRST WORD'
+columns.word0Column.states = 2
+columns.word0Column.width = 0.2
+columns.word0Column.border = a_textBorder
+columns.word0Column.hidden = false
+
+columns.word0Column.state1.label.text = '$FIRST WORD'
+columns.word0Column.state1.label.arrowDown = true
+columns.word0Column.state1.entry.text = @word0
+columns.word0Column.state1.sortAttributes = <word0Recharge, text>
+columns.word0Column.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+columns.word0Column.state1.colorAttribute = word0Color
+
+columns.word0Column.state2.label.text = '$FIRST WORD'
+columns.word0Column.state2.label.arrowDown = false
+columns.word0Column.state2.entry.text = @word0
+columns.word0Column.state2.sortAttributes = <word0Recharge, text>
+columns.word0Column.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+columns.word0Column.state2.colorAttribute = word0Color
+
+
+; SHOUTS --- WORD 2 COLUMN -------------------------------------------
+columns.word1Column.type = TEXT
+columns.word1Column.name = '$SECOND WORD'
+columns.word1Column.states = 2
+columns.word1Column.width = 0.2
+columns.word1Column.border = a_textBorder
+columns.word1Column.hidden = false
+
+columns.word1Column.state1.label.text = '$SECOND WORD'
+columns.word1Column.state1.label.arrowDown = true
+columns.word1Column.state1.entry.text = @word1
+columns.word1Column.state1.sortAttributes = <word1Recharge, text>
+columns.word1Column.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+columns.word1Column.state1.colorAttribute = word1Color
+
+columns.word1Column.state2.label.text = '$SECOND WORD'
+columns.word1Column.state2.label.arrowDown = false
+columns.word1Column.state2.entry.text = @word1
+columns.word1Column.state2.sortAttributes = <word1Recharge, text>
+columns.word1Column.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+columns.word1Column.state2.colorAttribute = word1Color
+
+
+; SHOUTS --- WORD 3 COLUMN -------------------------------------------
+columns.word2Column.type = TEXT
+columns.word2Column.name = '$THIRD WORD'
+columns.word2Column.states = 2
+columns.word2Column.width = 0.2
+columns.word2Column.border = a_textBorder
+columns.word2Column.hidden = false
+
+columns.word2Column.state1.label.text = '$THIRD WORD'
+columns.word2Column.state1.label.arrowDown = true
+columns.word2Column.state1.entry.text = @word2
+columns.word2Column.state1.sortAttributes = <word2Recharge, text>
+columns.word2Column.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+columns.word2Column.state1.colorAttribute = word2Color
+
+columns.word2Column.state2.label.text = '$THIRD WORD'
+columns.word2Column.state2.label.arrowDown = false
+columns.word2Column.state2.entry.text = @word2
+columns.word2Column.state2.sortAttributes = <word2Recharge, text>
+columns.word2Column.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+columns.word2Column.state2.colorAttribute = word2Color
+
+
+; EFFECT --- DURATION COLUMN -------------------------------------------
+columns.effectDurationColumn.type = TEXT
+columns.effectDurationColumn.name = '$TIME LEFT'
+columns.effectDurationColumn.states = 2
+columns.effectDurationColumn.width = 0.333
+columns.effectDurationColumn.label.textFormat.align = center
+columns.effectDurationColumn.entry.textFormat.align = center
+columns.effectDurationColumn.hidden = false
+
+columns.effectDurationColumn.state1.label.text = '$TIME LEFT'
+columns.effectDurationColumn.state1.label.arrowDown = false
+columns.effectDurationColumn.state1.entry.text = @timeRemainingDisplay
+columns.effectDurationColumn.state1.sortAttributes = <timeRemaining, text>
+columns.effectDurationColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.effectDurationColumn.state2.label.text = '$TIME LEFT'
+columns.effectDurationColumn.state2.label.arrowDown = true
+columns.effectDurationColumn.state2.entry.text = @timeRemainingDisplay
+columns.effectDurationColumn.state2.sortAttributes = <timeRemaining, text>
+columns.effectDurationColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; EFFECT --- SOURCE COLUMN -------------------------------------------
+columns.effectSourceColumn.type = TEXT
+columns.effectSourceColumn.name = '$SOURCE'
+columns.effectSourceColumn.states = 2
+columns.effectSourceColumn.width = 0.333
+columns.effectSourceColumn.label.textFormat.align = right
+columns.effectSourceColumn.entry.textFormat.align = right
+columns.effectSourceColumn.hidden = false
+
+columns.effectSourceColumn.state1.label.text = '$SOURCE'
+columns.effectSourceColumn.state1.label.arrowDown = false
+columns.effectSourceColumn.state1.entry.text = @cardName
+columns.effectSourceColumn.state1.sortAttributes = <cardName, text>
+columns.effectSourceColumn.state1.sortOptions = <{ASCENDING | CASEINSENSITIVE}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.effectSourceColumn.state2.label.text = '$SOURCE'
+columns.effectSourceColumn.state2.label.arrowDown = true
+columns.effectSourceColumn.state2.entry.text = @cardName
+columns.effectSourceColumn.state2.sortAttributes = <cardName, text>
+columns.effectSourceColumn.state2.sortOptions = <{DESCENDING | CASEINSENSITIVE}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; CRAFTING --- ICON COLUMN -------------------------------------------------------
+columns.craftIconColumn.type = ITEM_ICON
+columns.craftIconColumn.states = 2
+columns.craftIconColumn.icon.size = n_iconSize
+columns.craftIconColumn.border = a_iconBorder
+
+columns.craftIconColumn.state1.label.text = 'KIT'
+columns.craftIconColumn.state1.label.arrowDown = false
+columns.craftIconColumn.state1.sortAttributes = <'itemType', 'itemClass', 'itemSort', 'subTypeDisplay', 'infoSchoolName', 'miscClassDisplay', 'miscTypeDisplay', 'text'>
+columns.craftIconColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}>
+
+columns.craftIconColumn.state2.label.text = 'KIT'
+columns.craftIconColumn.state2.label.arrowDown = true
+columns.craftIconColumn.state2.sortAttributes = <'itemType', 'itemClass', 'itemSort', 'subTypeDisplay', 'infoSchoolName', 'miscClassDisplay', 'miscTypeDisplay', 'text'>
+columns.craftIconColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}>
+
+
+; CRAFTING --- NAME COLUMN -------------------------------------------------------
+columns.craftNameColumn.type = NAME
+columns.craftNameColumn.name = '$NAME'
+columns.craftNameColumn.states = 2
+columns.craftNameColumn.weight = 1.0
+columns.craftNameColumn.border = a_textBorder
+columns.craftNameColumn.label.textFormat.align = left
+
+columns.craftNameColumn.state1.label.text = '$NAME'
+columns.craftNameColumn.state1.entry.text = @text
+columns.craftNameColumn.state1.label.arrowDown = false
+columns.craftNameColumn.state1.sortAttributes = <text>
+columns.craftNameColumn.state1.sortOptions = <{ASCENDING | CASEINSENSITIVE}>
+
+columns.craftNameColumn.state2.label.text = '$NAME'
+columns.craftNameColumn.state2.entry.text = @text
+columns.craftNameColumn.state2.label.arrowDown = true
+columns.craftNameColumn.state2.sortAttributes = <text>
+columns.craftNameColumn.state2.sortOptions = <{DESCENDING | CASEINSENSITIVE}>
+
+
+; CRAFTING --- SUBTYPE COLUMN -------------------------------------------------------
+columns.craftTypeColumn.type = TEXT
+columns.craftTypeColumn.name = '$TYPE'
+columns.craftTypeColumn.states = 2
+columns.craftTypeColumn.width = 0.20
+columns.craftTypeColumn.border = a_textBorder
+columns.craftTypeColumn.hidden = false
+
+columns.craftTypeColumn.state1.label.text = '$TYPE'
+columns.craftTypeColumn.state1.entry.text = @subTypeDisplay
+columns.craftTypeColumn.state1.sortAttributes = <subTypeDisplay, text>
+columns.craftTypeColumn.state1.sortOptions = <{ASCENDING | CASEINSENSITIVE}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.craftTypeColumn.state2.label.text = '$TYPE'
+columns.craftTypeColumn.state2.entry.text = @subTypeDisplay
+columns.craftTypeColumn.state2.label.arrowDown = true
+columns.craftTypeColumn.state2.sortAttributes = <subTypeDisplay, text>
+columns.craftTypeColumn.state2.sortOptions = <{DESCENDING | CASEINSENSITIVE}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; CRAFTING --- WEIGHT COLUMN -------------------------------------------------------
+columns.craftWeightColumn.type = TEXT
+columns.craftWeightColumn.name = '$WEIGHT'
+columns.craftWeightColumn.states = 2
+columns.craftWeightColumn.width = 0.08
+columns.craftWeightColumn.border = a_textBorder
+columns.craftWeightColumn.hidden = false
+
+columns.craftWeightColumn.state1.label.text = '$WGT'
+columns.craftWeightColumn.state1.label.arrowDown = true
+columns.craftWeightColumn.state1.entry.text = @infoWeight
+columns.craftWeightColumn.state1.sortAttributes = <infoWeight, text>
+columns.craftWeightColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.craftWeightColumn.state2.label.text = '$WGT'
+columns.craftWeightColumn.state2.label.arrowDown = false
+columns.craftWeightColumn.state2.entry.text = @infoWeight
+columns.craftWeightColumn.state2.sortAttributes = <infoWeight, text>
+columns.craftWeightColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; CRAFTING --- VALUE COLUMN -------------------------------------------------------
+columns.craftValColumn.type = TEXT
+columns.craftValColumn.name = '$VALUE'
+columns.craftValColumn.states = 2
+columns.craftValColumn.width = 0.08
+columns.craftValColumn.border = a_textBorder
+columns.craftValColumn.hidden = false
+
+columns.craftValColumn.state1.label.text = '$VAL'
+columns.craftValColumn.state1.label.arrowDown = true
+columns.craftValColumn.state1.entry.text = @infoValue
+columns.craftValColumn.state1.sortAttributes = <infoValue, text>
+columns.craftValColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.craftValColumn.state2.label.text = '$VAL'
+columns.craftValColumn.state2.label.arrowDown = false
+columns.craftValColumn.state2.entry.text = @infoValue
+columns.craftValColumn.state2.sortAttributes = <infoValue, text>
+columns.craftValColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; CRAFTING --- VALUE/WEIGHT COLUMN -------------------------------------------------------
+columns.craftValWtColumn.type = TEXT
+columns.craftValWtColumn.name = '$VALUE/WEIGHT'
+columns.craftValWtColumn.states = 2
+columns.craftValWtColumn.width = 0.08
+columns.craftValWtColumn.border = a_textBorder
+columns.craftValWtColumn.hidden = false
+
+columns.craftValWtColumn.state1.label.text = '$V/W'
+columns.craftValWtColumn.state1.label.arrowDown = true
+columns.craftValWtColumn.state1.entry.text = @infoValueWeight
+columns.craftValWtColumn.state1.sortAttributes = <infoValueWeight, text>
+columns.craftValWtColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.craftValWtColumn.state2.label.text = '$V/W'
+columns.craftValWtColumn.state2.label.arrowDown = false
+columns.craftValWtColumn.state2.entry.text = @infoValueWeight
+columns.craftValWtColumn.state2.sortAttributes = <infoValueWeight, text>
+columns.craftValWtColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; CRAFTING --- TOTAL WEIGHT COLUMN -------------------------------------------------------
+columns.craftTWtColumn.type = TEXT
+columns.craftTWtColumn.name = '$DispInfoTotalWeight'
+columns.craftTWtColumn.states = 2
+columns.craftTWtColumn.width = 0.08
+columns.craftTWtColumn.border = a_textBorder
+columns.craftTWtColumn.hidden = true
+
+columns.craftTWtColumn.state1.label.text = '$DispInfoTotalWeightShort'
+columns.craftTWtColumn.state1.label.arrowDown = true
+columns.craftTWtColumn.state1.entry.text = @infoTotalWeight
+columns.craftTWtColumn.state1.sortAttributes = <infoTotalWeight, text>
+columns.craftTWtColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.craftTWtColumn.state2.label.text = '$DispInfoTotalWeightShort'
+columns.craftTWtColumn.state2.label.arrowDown = false
+columns.craftTWtColumn.state2.entry.text = @infoTotalWeight
+columns.craftTWtColumn.state2.sortAttributes = <infoTotalWeight, text>
+columns.craftTWtColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; CRAFTING --- WEAPONS EQUIPPED HAND COLUMN -------------------------------------------------------
+columns.craftEquippedHandColumn.type = TEXT
+columns.craftEquippedHandColumn.name = '$DispInfoEquippedHand'
+columns.craftEquippedHandColumn.states = 2
+columns.craftEquippedHandColumn.width = 0.08
+columns.craftEquippedHandColumn.border = a_textBorder
+columns.craftEquippedHandColumn.hidden = true
+
+columns.craftEquippedHandColumn.state1.label.text = '$DispInfoEquippedHandShort'
+columns.craftEquippedHandColumn.state1.label.arrowDown = false
+columns.craftEquippedHandColumn.state1.entry.text = @equipTypeDisplay
+columns.craftEquippedHandColumn.state1.sortAttributes = <equipType, text>
+columns.craftEquippedHandColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.craftEquippedHandColumn.state2.label.text = '$DispInfoEquippedHandShort'
+columns.craftEquippedHandColumn.state2.label.arrowDown = true
+columns.craftEquippedHandColumn.state2.entry.text = @equipTypeDisplay
+columns.craftEquippedHandColumn.state2.sortAttributes = <equipType, text>
+columns.craftEquippedHandColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; CRAFTING --- WEAPONS DAMAGE COLUMN -------------------------------------------------------
+columns.craftDamageColumn.type = TEXT
+columns.craftDamageColumn.name = '$DAMAGE'
+columns.craftDamageColumn.states = 2
+columns.craftDamageColumn.width = 0.08
+columns.craftDamageColumn.border = a_textBorder
+columns.craftDamageColumn.hidden = false
+
+columns.craftDamageColumn.state1.label.text = '$DAM'
+columns.craftDamageColumn.state1.label.arrowDown = true
+columns.craftDamageColumn.state1.entry.text = @infoDamage
+columns.craftDamageColumn.state1.sortAttributes = <infoDamage, text>
+columns.craftDamageColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.craftDamageColumn.state2.label.text = '$DAM'
+columns.craftDamageColumn.state2.label.arrowDown = false
+columns.craftDamageColumn.state2.entry.text = @infoDamage
+columns.craftDamageColumn.state2.sortAttributes = <infoDamage, text>
+columns.craftDamageColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; CRAFTING --- ARMOR RATING COLUMN -------------------------------------------------------
+columns.craftArmorRatingColumn.type = TEXT
+columns.craftArmorRatingColumn.name = '$ARMOR'
+columns.craftArmorRatingColumn.states = 2
+columns.craftArmorRatingColumn.width = 0.08
+columns.craftArmorRatingColumn.border = a_textBorder
+columns.craftArmorRatingColumn.hidden = false
+
+columns.craftArmorRatingColumn.state1.label.text = '$ARM'
+columns.craftArmorRatingColumn.state1.label.arrowDown = true
+columns.craftArmorRatingColumn.state1.entry.text = @infoArmor
+columns.craftArmorRatingColumn.state1.sortAttributes = <infoArmor, text>
+columns.craftArmorRatingColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.craftArmorRatingColumn.state2.label.text = '$ARM'
+columns.craftArmorRatingColumn.state2.label.arrowDown = false
+columns.craftArmorRatingColumn.state2.entry.text = @infoArmor
+columns.craftArmorRatingColumn.state2.sortAttributes = <infoArmor, text>
+columns.craftArmorRatingColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; CRAFTING --- ARMOR CLASS COLUMN -------------------------------------------------------
+columns.craftArmorClassColumn.type = TEXT
+columns.craftArmorClassColumn.name = '$CLASS'
+columns.craftArmorClassColumn.states = 2
+columns.craftArmorClassColumn.width = 0.10
+columns.craftArmorClassColumn.border = a_textBorder
+columns.craftArmorClassColumn.hidden = true
+
+columns.craftArmorClassColumn.state1.label.text = '$CLASS'
+columns.craftArmorClassColumn.state1.label.arrowDown = false
+columns.craftArmorClassColumn.state1.entry.text = @weightClassDisplay
+columns.craftArmorClassColumn.state1.sortAttributes = <armorClass, text>
+columns.craftArmorClassColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.craftArmorClassColumn.state2.label.text = '$CLASS'
+columns.craftArmorClassColumn.state2.label.arrowDown = true
+columns.craftArmorClassColumn.state2.entry.text = @weightClassDisplay
+columns.craftArmorClassColumn.state2.sortAttributes = <armorClass, text>
+columns.craftArmorClassColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; CRAFTING --- ENCHANT EFFECT COLUMN -------------------------------------------------------
+columns.enchantEffectColumn.type = TEXT
+columns.enchantEffectColumn.name = '$EFFECT'
+columns.enchantEffectColumn.states = 2
+columns.enchantEffectColumn.width = 0.14
+columns.enchantEffectColumn.label.textFormat.align = right
+columns.enchantEffectColumn.entry.textFormat.align = right
+columns.enchantEffectColumn.hidden = false
+
+columns.enchantEffectColumn.state1.label.text = '$EFFECT'
+columns.enchantEffectColumn.state1.label.arrowDown = false
+columns.enchantEffectColumn.state1.entry.text = @effectName
+columns.enchantEffectColumn.state1.sortAttributes = <effectName, value, text>
+columns.enchantEffectColumn.state1.sortOptions = <{ASCENDING | CASEINSENSITIVE}, {DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.enchantEffectColumn.state2.label.text = '$EFFECT'
+columns.enchantEffectColumn.state2.label.arrowDown = true
+columns.enchantEffectColumn.state2.entry.text = @effectName
+columns.enchantEffectColumn.state2.sortAttributes = <effectName, value, text>
+columns.enchantEffectColumn.state2.sortOptions = <{DESCENDING | CASEINSENSITIVE}, {DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; CRAFTING --- ENCHANT SOUL SIZE COLUMN -------------------------------------------------------
+columns.soulSizeColumn.type = TEXT
+columns.soulSizeColumn.name = '$DispInfoSoulSize'
+columns.soulSizeColumn.states = 2
+columns.soulSizeColumn.width = 0.14
+columns.soulSizeColumn.label.textFormat.align = right
+columns.soulSizeColumn.entry.textFormat.align = right
+columns.soulSizeColumn.hidden = false
+
+columns.soulSizeColumn.state1.label.text = '$DispInfoSoulSizeShort'
+columns.soulSizeColumn.state1.label.arrowDown = false
+columns.soulSizeColumn.state1.entry.text = @soulSizeDisplay
+columns.soulSizeColumn.state1.sortAttributes = <soulSize, text>
+columns.soulSizeColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.soulSizeColumn.state2.label.text = '$DispInfoSoulSizeShort'
+columns.soulSizeColumn.state2.label.arrowDown = true
+columns.soulSizeColumn.state2.entry.text = @soulSizeDisplay
+columns.soulSizeColumn.state2.sortAttributes = <soulSize, text>
+columns.soulSizeColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; =====================================================================================================================
+; VIEWS
+; =====================================================================================================================
+
+
+; ITEM VIEWS -------------------------------------------------------
+views.favoriteItemView.primaryColumn = itemNameColumn
+views.favoriteItemView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
+views.favoriteItemView.category = <Inventory.FILTERFLAG_INV_FAVORITES>
+
+views.allItemView.primaryColumn = itemNameColumn
+views.allItemView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
+views.allItemView.category = <Inventory.FILTERFLAG_INV_ALL, Inventory.FILTERFLAG_CONTAINER_ALL>
+
+views.weaponView.primaryColumn = itemNameColumn
+views.weaponView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, weaponEquippedHandColumn, infoDamageColumn, weaponBaseDamageColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
+views.weaponView.category = <Inventory.FILTERFLAG_INV_WEAPONS, Inventory.FILTERFLAG_CONTAINER_WEAPONS>
+
+views.armorView.primaryColumn = itemNameColumn
+views.armorView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, armorClassColumn, armorRatingColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
+views.armorView.category = <Inventory.FILTERFLAG_INV_ARMOR, Inventory.FILTERFLAG_CONTAINER_ARMOR>
+
+views.potionView.primaryColumn = potionNameColumn
+views.potionView.columns = <equipColumn, potionIconColumn, potionNameColumn, subTypeColumn, itemMagnitudeColumn, itemDurationColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
+views.potionView.category = <Inventory.FILTERFLAG_INV_POTIONS, Inventory.FILTERFLAG_CONTAINER_POTIONS>
+
+views.scrollView.primaryColumn = itemNameColumn
+views.scrollView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, miscClassColumn, itemMagnitudeColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
+views.scrollView.category = <Inventory.FILTERFLAG_INV_SCROLLS, Inventory.FILTERFLAG_CONTAINER_SCROLLS>
+
+views.foodView.primaryColumn = foodNameColumn
+views.foodView.columns = <equipColumn, foodIconColumn, foodNameColumn, subTypeColumn, infoGourmetColumn, itemMagnitudeColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
+views.foodView.category = <Inventory.FILTERFLAG_INV_FOOD, Inventory.FILTERFLAG_CONTAINER_FOOD>
+
+views.ingredientView.primaryColumn = itemNameColumn
+views.ingredientView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
+views.ingredientView.category = <Inventory.FILTERFLAG_INV_INGREDIENTS, Inventory.FILTERFLAG_CONTAINER_INGREDIENTS>
+
+views.bookView.primaryColumn = itemNameColumn
+views.bookView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, miscClassColumn, itemMagnitudeColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
+views.bookView.category = <Inventory.FILTERFLAG_INV_BOOKS, Inventory.FILTERFLAG_CONTAINER_BOOKS>
+
+views.keyView.primaryColumn = itemNameColumn
+views.keyView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
+views.keyView.category = <Inventory.FILTERFLAG_INV_KEYS, Inventory.FILTERFLAG_CONTAINER_KEYS>
+
+views.miscView.primaryColumn = itemNameColumn
+views.miscView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
+views.miscView.category = <Inventory.FILTERFLAG_INV_MISC, Inventory.FILTERFLAG_CONTAINER_MISC>
+
+
+; MAGIC VIEWS -------------------------------------------------------
+views.favoriteMagicView.primaryColumn = magicNameColumn
+views.favoriteMagicView.columns = <equipColumn, magicIconColumn, magicNameColumn, magicClassColumn, magicSubTypeColumn, magicLevelColumn, infoSchoolColumn, magicMagnitudeColumn, magicDurationColumn, spellCostColumn>
+views.favoriteMagicView.category = <Inventory.FILTERFLAG_MAGIC_FAVORITES>
+
+views.allMagicView.primaryColumn = magicNameColumn
+views.allMagicView.columns = <equipColumn, magicIconColumn, magicNameColumn, magicClassColumn, magicSubTypeColumn, magicLevelColumn, infoSchoolColumn, magicMagnitudeColumn, magicDurationColumn, spellCostColumn>
+views.allMagicView.category = <Inventory.FILTERFLAG_MAGIC_ALL>
+
+views.alterationView.primaryColumn = magicNameColumn
+views.alterationView.columns = <equipColumn, magicIconColumn, magicNameColumn, magicClassColumn, magicSubTypeColumn, magicLevelColumn, infoSchoolColumn, magicMagnitudeColumn, magicDurationColumn, spellCostColumn>
+views.alterationView.category = <Inventory.FILTERFLAG_MAGIC_ALTERATION>
+
+views.illusionView.primaryColumn = magicNameColumn
+views.illusionView.columns = <equipColumn, magicIconColumn, magicNameColumn, magicClassColumn, magicSubTypeColumn, magicLevelColumn, infoSchoolColumn, magicMagnitudeColumn, magicDurationColumn, spellCostColumn>
+views.illusionView.category = <Inventory.FILTERFLAG_MAGIC_ILLUSION>
+
+views.destructionView.primaryColumn = magicNameColumn
+views.destructionView.columns = <equipColumn, magicIconColumn, magicNameColumn, magicClassColumn, magicSubTypeColumn, magicLevelColumn, infoSchoolColumn, magicMagnitudeColumn, magicDurationColumn, spellCostColumn>
+views.destructionView.category = <Inventory.FILTERFLAG_MAGIC_DESTRUCTION>
+
+views.conjurationView.primaryColumn = magicNameColumn
+views.conjurationView.columns = <equipColumn, magicIconColumn, magicNameColumn, magicClassColumn, magicSubTypeColumn, magicLevelColumn, infoSchoolColumn, magicMagnitudeColumn, magicDurationColumn, spellCostColumn>
+views.conjurationView.category = <Inventory.FILTERFLAG_MAGIC_CONJURATION>
+
+views.restorationView.primaryColumn = magicNameColumn
+views.restorationView.columns = <equipColumn, magicIconColumn, magicNameColumn, magicClassColumn, magicSubTypeColumn, magicLevelColumn, infoSchoolColumn, magicMagnitudeColumn, magicDurationColumn, spellCostColumn>
+views.restorationView.category = <Inventory.FILTERFLAG_MAGIC_RESTORATION>
+
+views.shoutsView.primaryColumn = magicNameColumn
+views.shoutsView.columns = <equipColumn, shoutIconColumn, magicNameColumn, word0Column, word1Column, word2Column>
+views.shoutsView.category = Inventory.FILTERFLAG_MAGIC_SHOUTS
+
+views.powersView.primaryColumn = magicNameColumn
+views.powersView.columns = <equipColumn, magicIconColumn, magicNameColumn, magicClassColumn, magicSubTypeColumn, magicLevelColumn, magicMagnitudeColumn, magicDurationColumn, spellCostColumn>
+views.powersView.category = Inventory.FILTERFLAG_MAGIC_POWERS
+
+views.activeEffectView.primaryColumn = magicNameColumn
+views.activeEffectView.columns = <equipColumn, magicIconColumn, magicNameColumn, effectDurationColumn, effectSourceColumn>
+views.activeEffectView.category = Inventory.FILTERFLAG_MAGIC_ACTIVEEFFECTS
+
+
+; CRAFTING VIEWS -------------------------------------------------------
+views.defaultCraftingView.primaryColumn = craftNameColumn
+views.defaultCraftingView.columns = <equipColumn, craftIconColumn, craftNameColumn, craftTypeColumn, craftDamageColumn, craftArmorRatingColumn, craftWeightColumn, craftTWtColumn, craftValColumn, craftValWtColumn>
+
+views.weaponCraftingView.primaryColumn = craftNameColumn
+views.weaponCraftingView.columns = <equipColumn, craftIconColumn, craftNameColumn, craftTypeColumn, craftEquippedHandColumn, craftDamageColumn, craftWeightColumn, craftTWtColumn, craftValColumn, craftValWtColumn>
+views.weaponCraftingView.category = <Inventory.FILTERFLAG_CUST_CRAFT_WEAPONS, Inventory.FILTERFLAG_CUST_CRAFT_AMMO>
+
+views.apparelCraftingView.primaryColumn = craftNameColumn
+views.apparelCraftingView.columns = <equipColumn, craftIconColumn, craftNameColumn, craftTypeColumn, craftArmorClassColumn, craftArmorRatingColumn, craftWeightColumn, craftTWtColumn, craftValColumn, craftValWtColumn>
+views.apparelCraftingView.category = <Inventory.FILTERFLAG_CUST_CRAFT_ARMOR, Inventory.FILTERFLAG_CUST_CRAFT_JEWELRY>
+
+views.miscCraftingView.primaryColumn = craftNameColumn
+views.miscCraftingView.columns = <equipColumn, craftIconColumn, craftNameColumn, craftTypeColumn, craftWeightColumn, craftTWtColumn, craftValColumn, craftValWtColumn>
+views.miscCraftingView.category = <Inventory.FILTERFLAG_CUST_CRAFT_FOOD, Inventory.FILTERFLAG_CRAFT_FOOD, Inventory.FILTERFLAG_CUST_CRAFT_MISC, Inventory.FILTERFLAG_CRAFT_MISC>
+
+views.alchemyCraftingView.primaryColumn = craftNameColumn
+views.alchemyCraftingView.columns = <equipColumn, craftIconColumn, craftNameColumn, craftTypeColumn, craftWeightColumn, craftTWtColumn, craftValColumn, craftValWtColumn>
+
+views.disenchantView.primaryColumn = craftNameColumn
+views.disenchantView.columns = <equipColumn, craftIconColumn, craftNameColumn, enchantEffectColumn, craftTypeColumn, craftWeightColumn, craftTWtColumn, craftValColumn, craftValWtColumn>
+views.disenchantView.category = Inventory.FILTERFLAG_ENCHANTING_DISENCHANT
+
+views.enchantItemView.primaryColumn = craftNameColumn
+views.enchantItemView.columns = <equipColumn, craftIconColumn, craftNameColumn, craftTypeColumn, craftWeightColumn, craftTWtColumn, craftValColumn, craftValWtColumn>
+views.enchantItemView.category = Inventory.FILTERFLAG_ENCHANTING_ITEM
+
+views.enchantEnchantmentView.primaryColumn = craftNameColumn
+views.enchantEnchantmentView.columns = <equipColumn, craftIconColumn, craftNameColumn>
+views.enchantEnchantmentView.category = Inventory.FILTERFLAG_ENCHANTING_ENCHANTMENT
+
+views.enchantSoulView.primaryColumn = craftNameColumn
+views.enchantSoulView.columns = <equipColumn, craftIconColumn, craftNameColumn, soulSizeColumn, craftWeightColumn, craftTWtColumn, craftValColumn, craftValWtColumn>
+views.enchantSoulView.category = Inventory.FILTERFLAG_ENCHANTING_SOULGEM
+
+
+; =====================================================================================================================
+; LAYOUTS
+; =====================================================================================================================
+
+
+layouts.itemListLayout.name = 'ItemListLayout'
+layouts.itemListLayout.views = <favoriteItemView, allItemView, weaponView, armorView, potionView, scrollView, foodView, ingredientView, bookView, keyView, miscView>
+
+layouts.magicListLayout.name = 'MagicListLayout'
+layouts.magicListLayout.views = <favoriteMagicView, allMagicView, alterationView, illusionView, destructionView, conjurationView, restorationView, shoutsView, powersView, activeEffectView>
+
+layouts.constructListLayout.name = 'ConstructListLayout'
+layouts.constructListLayout.views = <weaponCraftingView, apparelCraftingView, miscCraftingView, defaultCraftingView>
+
+layouts.smithingListLayout.name = 'SmithingListLayout'
+layouts.smithingListLayout.views = <defaultCraftingView>
+
+layouts.enchantListLayout.name = 'EnchantListLayout'
+layouts.enchantListLayout.views = <disenchantView, enchantItemView, enchantEnchantmentView, enchantSoulView, defaultCraftingView>
+
+layouts.alchemyListLayout.name = 'AlchemyListLayout'
+layouts.alchemyListLayout.views = <alchemyCraftingView>
+
+
+; =====================================================================================================================
+[Properties]
+; =====================================================================================================================
+
+
+; Item Compound Properties ----------------------------------------------------------------------------------------------------
+compoundProps.sortDataItems.propertyToSet = 'itemSortingMaster'
+compoundProps.sortDataItems.concatenateList = <'itemType', 'itemClass', 'itemSort', 'subTypeDisplay', 'miscClassDisplay', 'miscTypeDisplay', 'subTypeKimari', 'text'>
+
+compoundProps.sortDataPotion.propertyToSet = 'potionSortingMaster'
+compoundProps.sortDataPotion.concatenateList = <'potionSort', 'magnitude', 'text'>
+
+compoundProps.sortDataFood.propertyToSet = 'foodSortingMaster'
+compoundProps.sortDataFood.concatenateList = <'foodSortGourmet', 'subTypeDisplay', 'text'>
+
+itemCompoundProperties = <sortDataItems, sortDataPotion, sortDataFood>
+
+
+; Magic Compound Properties ----------------------------------------------------------------------------------------------------
+compoundProps.sortDataMagic.propertyToSet = 'magicSortingMaster'
+compoundProps.sortDataMagic.concatenateList = <'magicSchool', 'magicClassDisplay', 'magicTypeDisplay', 'subTypeKimari', 'text'>
+
+props.dataMagic.propertiesToSet = <'magicSchool', 'infoSchoolName', 'skillLevel', 'infoCastLevel'>
+props.dataMagic.dataMember1.filter = <'type': Inventory.ICT_SHOUT>
+props.dataMagic.dataMember1.set = <'magicSchool': 7, 'infoSchoolName': '$DispInfoShoutPower'>
+
+magicCompoundProperties = <sortDataMagic, dataMagic>
