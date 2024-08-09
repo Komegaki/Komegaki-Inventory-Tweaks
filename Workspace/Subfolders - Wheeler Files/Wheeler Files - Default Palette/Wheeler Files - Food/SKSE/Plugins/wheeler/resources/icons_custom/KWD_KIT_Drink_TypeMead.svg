@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="512"
+   width="512"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="KWD_KIT_Drink_Mead.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.91111584"
+     inkscape:cx="170.12107"
+     inkscape:cy="224.45005"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="M 314.4621,354.73384 V 301.8164 H 197.5379 v 52.91744 H 314.4621 M 218.93834,39.174665 q -1.9455,-2.140038 -1.9455,-5.058276 0,-3.112792 1.9455,-5.447395 2.91823,-1.945484 5.44738,-1.945484 h 61.67216 q 3.11279,0 5.44738,1.945484 2.52915,2.334603 2.52915,5.447395 0,2.918238 -2.52915,5.058276 -2.33459,2.33459 -5.44738,2.33459 l 7.39288,30.738823 q 0,9.338373 -5.05828,14.396664 l 8.17107,105.056688 6.80923,9.92202 q 24.12413,36.96439 25.09688,55.05748 v 166.72886 q 0,61.8667 -33.07341,61.8667 h -78.98706 q -32.87885,0 -32.87885,-61.8667 V 256.68093 q 0,-17.50944 25.29143,-55.05748 l 6.22557,-9.92202 8.56018,-103.889398 q -7.19833,-4.280081 -7.19833,-15.563954 l 7.97653,-30.738823 q -3.30733,0 -5.44738,-2.33459"
+     fill="#ffffff"
+     fill-rule="evenodd"
+     stroke="none"
+     id="path1"
+     style="fill:#d2902d;fill-opacity:1;stroke-width:3.89099" />
+</svg>

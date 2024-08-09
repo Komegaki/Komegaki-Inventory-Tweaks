@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="512"
+   width="512"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="KWD_KIT_Drink_Wine.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2863293"
+     inkscape:cx="228.55734"
+     inkscape:cy="268.59374"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="m 196.67259,335.13609 q 22.86373,11.23475 55.38539,11.23475 32.52169,0 55.38541,-11.23475 21.08982,-10.64348 23.06082,-25.22896 v -2.56228 q 0,-15.571 -23.06082,-26.80575 -22.86372,-11.62898 -55.38541,-11.62898 -32.52166,0 -55.38539,11.62898 -23.06083,11.23475 -23.06083,26.80575 v 2.56228 q 1.7739,14.58548 23.06083,25.22896 M 235.5015,23.32218 h 37.05499 q 20.1043,0 20.1043,20.695612 v 14.782581 h 10.64347 q 6.89853,0 11.82606,5.124629 5.32173,4.927527 5.32173,12.220267 0,6.898537 -5.32173,11.826064 -4.92754,5.124628 -11.82606,5.124628 h -4.92754 v 99.930249 q 39.02602,10.44636 69.57669,40.79993 46.51584,46.71296 46.51584,112.34759 0,65.43757 -46.51584,111.95342 -19.1188,19.11882 -41.39124,30.15648 l -0.59128,0.39419 H 186.02912 Q 163.1654,477.24597 143.8495,458.12715 97.530745,411.6113 97.530745,346.17373 q 0,-65.63463 46.318755,-112.34759 29.56516,-29.36808 66.81725,-39.81442 V 93.095961 h -6.11012 q -7.29275,0 -12.22027,-5.124628 -5.12463,-4.927527 -5.12463,-11.826064 0,-7.29274 5.12463,-12.220267 4.92752,-5.124629 12.22027,-5.124629 h 11.23475 V 44.017792 q 0,-20.695612 19.71012,-20.695612"
+     fill="#ffffff"
+     fill-rule="evenodd"
+     stroke="none"
+     id="path1"
+     style="fill:#47743e;fill-opacity:1;stroke-width:3.94203" />
+</svg>

@@ -2956,6 +2956,38 @@
 	},
 	{
 		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "KIT_Potion_WelkyndStone" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Magicka",
+			"itemType": "4",
+			"itemClass": "3",
+			"itemSort": "1",
+			"potionSort": "24",
+			"iconSource": "KIT/Misc.swf",
+			"iconLabel": "misc_welkyndstone",
+			"iconColor": "#2e89b7"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "KIT_Potion_WelkyndStone" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Magicka",
+			"itemType": "4",
+			"itemClass": "3",
+			"itemSort": "1",
+			"potionSort": "24",
+			"iconSource": "KIT/Misc.swf",
+			"iconLabel": "misc_welkyndstone",
+			"iconColor": "#2e89b7"
+		}
+	},
+	{
+		"match": {
 			"formType": "Potion",
 			"keywords": [ "KIT_Food_TypeVegetable" ]
 		},
@@ -4198,11 +4230,44 @@
 	{
 		"match": {
 			"formType": "MiscItem",
+			"keywords": [ "KIT_Data_TypeIconPottery" ]
+		},
+		"assign": {
+			"iconSource": "KIT/Misc.swf",
+			"iconLabel": "misc_pot",
+			"iconColor": "#5c7b8a"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
 			"keywords": [ "KIT_Data_TypeIconBasket" ]
 		},
 		"assign": {
 			"iconSource": "KIT/Misc.swf",
 			"iconLabel": "misc_basket",
+			"iconColor": "#8f6956"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "KIT_Data_TypeIconBowl" ]
+		},
+		"assign": {
+			"iconSource": "KIT/Misc.swf",
+			"iconLabel": "misc_bowl",
+			"iconColor": "#8f6956"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "KIT_Data_TypeIconPlate" ]
+		},
+		"assign": {
+			"iconSource": "KIT/Misc.swf",
+			"iconLabel": "misc_plate",
 			"iconColor": "#8f6956"
 		}
 	},
@@ -4570,11 +4635,30 @@
 	{
 		"match": {
 			"formType": "MiscItem",
+			"keywords": [ "KIT_Data_TypeIconJar" ]
+		},
+		"assign": {
+			"iconSource": "KIT/Misc.swf",
+			"iconLabel": "misc_jar"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
 			"keywords": [ "KIT_Data_TypeIconSoap" ]
 		},
 		"assign": {
 			"iconSource": "KIT/Misc.swf",
 			"iconLabel": "misc_soap"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "KIT_Data_TypeIconSkullTroll" ]
+		},
+		"assign": {
+			"iconLabel": "misc_trollskull"
 		}
 	},
 	{
