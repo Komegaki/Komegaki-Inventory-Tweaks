@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="Misc_CampingTent.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1.0595392"
+     inkscape:cx="259.54679"
+     inkscape:cy="253.41205"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1042"
+     inkscape:window-y="235"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <path
+     id="path2"
+     style="fill:#6b422e;stroke-width:0.295402;fill-opacity:1"
+     d="m 98.243098,13.687536 -5.22242,0.05788 0.121956,11.723315 C 78.761011,30.983622 62.015102,32.16399 44.840673,32.558736 56.099509,60.252999 71.725643,85.858553 90.638911,109.892 97.687233,104.64422 106.16304,101.68043 114.85449,99.061652 107.13562,92.84539 101.50783,85.757848 97.784211,77.876899 104.47536,85.113515 111.02943,92.521485 120.30635,96.52589 124.11382,90.967181 128.9978,86.484986 135.46666,83.587662 121.4639,65.088482 107.75729,46.500453 98.377456,26.614396 Z m -57.421301,3.511414 -5.221903,0.07338 c 0,0 0.07284,5.51564 0.162781,11.118701 0.04526,2.801831 0.09401,5.625236 0.141593,7.79849 0.01741,0.792789 0.0341,1.37724 0.05064,1.967322 C 26.3825,62.656511 14.747035,86.218425 0,108.36599 c 10.354464,-1.95135 19.632418,-1.07411 28.594637,-0.0124 5.386995,-19.621358 8.221329,-39.607382 10.336836,-59.696095 1.454905,20.281965 4.043818,40.56393 9.715169,60.845895 14.250518,-1.34135 25.467816,1.56381 37.530009,3.28611 C 68.227172,90.176241 52.162204,66.037425 41.170096,37.792008 c -0.01451,-0.535943 -0.02935,-1.021411 -0.04444,-1.725476 -0.047,-2.152202 -0.09662,-4.969817 -0.141594,-7.765934 C 40.894111,22.708364 40.821798,17.19895 40.821797,17.19895 Z"
+     sodipodi:nodetypes="cccccccccccccccccccccccsc" />
+</svg>

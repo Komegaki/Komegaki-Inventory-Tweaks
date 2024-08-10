@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="KWD_KIT_MagicDamageSun.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="1.0595392"
+     inkscape:cx="226.51356"
+     inkscape:cy="312.87186"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="276"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="0.26458332"
+       spacingy="0.26458334"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path1"
+       style="fill:#ecb279;fill-opacity:1;fill-rule:evenodd;stroke-width:10.573"
+       d="M 67.732816 0 L 51.861433 29.418359 L 19.838065 19.839099 L 29.417325 51.862984 L 0 67.733849 L 29.392004 83.592313 L 19.838065 115.54282 L 51.826293 105.97596 L 67.732816 135.46666 L 83.603681 106.04934 L 115.62757 115.6286 L 106.04831 83.605232 L 135.46666 67.733849 L 106.0235 51.850064 L 115.62757 19.753316 L 83.567508 29.344462 L 67.732816 0 z M 67.733332 29.897916 C 88.629226 29.897914 105.56875 46.837423 105.56875 67.733332 C 105.56875 88.629233 88.629241 105.56875 67.733332 105.56875 C 46.837424 105.56875 29.897916 88.62924 29.897916 67.733332 C 29.897916 46.837427 46.837423 29.897914 67.733332 29.897916 z " />
+    <path
+       d="m 95.779165,67.733335 c 0,-15.489289 -12.556556,-28.045836 -28.045833,-28.045834 -15.489288,-2e-6 -28.045833,12.556543 -28.045833,28.04583 0,15.489288 12.556545,28.045835 28.045833,28.045833 15.489288,0 28.045833,-12.556545 28.045833,-28.045829 z"
+       style="display:inline;fill:#ecb279;fill-opacity:1;fill-rule:evenodd;stroke-width:11.2184"
+       id="path2" />
+  </g>
+</svg>
