@@ -327,6 +327,27 @@ columns.weaponBaseDamageColumn.state2.sortAttributes = <infoBaseDamage, text>
 columns.weaponBaseDamageColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 
+; WEAPONS --- SCHOOL COLUMN -------------------------------------------
+columns.infoWeaponSchoolColumn.type = TEXT
+columns.infoWeaponSchoolColumn.name = '$SCHOOL'
+columns.infoWeaponSchoolColumn.states = 2
+columns.infoWeaponSchoolColumn.width = 0.14
+columns.infoWeaponSchoolColumn.border = a_textBorder
+columns.infoWeaponSchoolColumn.hidden = true
+
+columns.infoWeaponSchoolColumn.state1.label.text = '$SCHOOL'
+columns.infoWeaponSchoolColumn.state1.label.arrowDown = false
+columns.infoWeaponSchoolColumn.state1.entry.text = @infoSchoolName
+columns.infoWeaponSchoolColumn.state1.sortAttributes = <infoSchoolName, text>
+columns.infoWeaponSchoolColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.infoWeaponSchoolColumn.state2.label.text = '$SCHOOL'
+columns.infoWeaponSchoolColumn.state2.label.arrowDown = true
+columns.infoWeaponSchoolColumn.state2.entry.text = @infoSchoolName
+columns.infoWeaponSchoolColumn.state2.sortAttributes = <infoSchoolName, text>
+columns.infoWeaponSchoolColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
 ; ARMOR --- ARMOR RATING COLUMN -------------------------------------------------------
 columns.armorRatingColumn.type = TEXT
 columns.armorRatingColumn.name = '$ARMOR'
@@ -367,6 +388,49 @@ columns.armorClassColumn.state2.label.arrowDown = true
 columns.armorClassColumn.state2.entry.text = @weightClassDisplay
 columns.armorClassColumn.state2.sortAttributes = <armorClass, text>
 columns.armorClassColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
+
+; ARMOR --- EQUIP SLOT COLUMN -------------------------------------------------------
+columns.armorSlotsColumn.type = TEXT
+columns.armorSlotsColumn.name = '$DispInfoArmorEquipSlot'
+columns.armorSlotsColumn.states = 2
+columns.armorSlotsColumn.width = 0.10
+columns.armorSlotsColumn.border = a_textBorder
+columns.armorSlotsColumn.hidden = true
+
+columns.armorSlotsColumn.state1.label.text = '$DispInfoArmorEquipSlotShort'
+columns.armorSlotsColumn.state1.label.arrowDown = false
+columns.armorSlotsColumn.state1.entry.text = @bipedSlotsDisplay
+columns.armorSlotsColumn.state1.sortAttributes = <bipedSlotsDisplay, text>
+columns.armorSlotsColumn.state1.sortOptions = <{ASCENDING | CASEINSENSITIVE}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.armorSlotsColumn.state2.label.text = '$DispInfoArmorEquipSlotShort'
+columns.armorSlotsColumn.state2.label.arrowDown = true
+columns.armorSlotsColumn.state2.entry.text = @bipedSlotsDisplay
+columns.armorSlotsColumn.state2.sortAttributes = <bipedSlotsDisplay, text>
+columns.armorSlotsColumn.state2.sortOptions = <{DESCENDING | CASEINSENSITIVE}, {ASCENDING | CASEINSENSITIVE}>
+
+
+; ARMOR --- WARMTH COLUMN -----------------------------------------------------
+columns.armorCCWarmthColumn.type = TEXT
+columns.armorCCWarmthColumn.name = '$DispInfoArmorWarmth'
+columns.armorCCWarmthColumn.states = 2
+columns.armorCCWarmthColumn.width = 0.10
+columns.armorCCWarmthColumn.border = a_textBorder
+columns.armorCCWarmthColumn.hidden = true
+
+columns.armorCCWarmthColumn.state1.label.text = '$DispInfoArmorWarmthShort'
+columns.armorCCWarmthColumn.state1.label.arrowDown = true
+columns.armorCCWarmthColumn.state1.entry.text = @infoWarmth
+columns.armorCCWarmthColumn.state1.sortAttributes = <infoWarmth, text>
+columns.armorCCWarmthColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.armorCCWarmthColumn.state2.label.text = '$DispInfoArmorWarmthShort'
+columns.armorCCWarmthColumn.state2.label.arrowDown = false
+columns.armorCCWarmthColumn.state2.entry.text = @infoWarmth
+columns.armorCCWarmthColumn.state2.sortAttributes = <infoWarmth, text>
+columns.armorCCWarmthColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 
 ; POTIONS --- ICON COLUMN -------------------------------------------------------
@@ -508,6 +572,27 @@ columns.miscTypeColumn.state2.sortAttributes = <miscTypeDisplay, text>
 columns.miscTypeColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 
+; TOME AND SCRL --- SCHOOL COLUMN -------------------------------------------
+columns.infoMiscSchoolColumn.type = TEXT
+columns.infoMiscSchoolColumn.name = '$SCHOOL'
+columns.infoMiscSchoolColumn.states = 2
+columns.infoMiscSchoolColumn.width = 0.14
+columns.infoMiscSchoolColumn.border = a_textBorder
+columns.infoMiscSchoolColumn.hidden = true
+
+columns.infoMiscSchoolColumn.state1.label.text = '$SCHOOL'
+columns.infoMiscSchoolColumn.state1.label.arrowDown = false
+columns.infoMiscSchoolColumn.state1.entry.text = @infoSchoolName
+columns.infoMiscSchoolColumn.state1.sortAttributes = <infoSchoolName, text>
+columns.infoMiscSchoolColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.infoMiscSchoolColumn.state2.label.text = '$SCHOOL'
+columns.infoMiscSchoolColumn.state2.label.arrowDown = true
+columns.infoMiscSchoolColumn.state2.entry.text = @infoSchoolName
+columns.infoMiscSchoolColumn.state2.sortAttributes = <infoSchoolName, text>
+columns.infoMiscSchoolColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+
 ; POTION, FOOD, TOME AND SCRL --- MAGNITUDE COLUMN -------------------------------------------------------
 columns.itemMagnitudeColumn.type = TEXT
 columns.itemMagnitudeColumn.name = '$MAGNITUDE'
@@ -616,13 +701,13 @@ columns.magicSubTypeColumn.hidden = false
 
 columns.magicSubTypeColumn.state1.label.text = '$TYPE'
 columns.magicSubTypeColumn.state1.label.arrowDown = false
-columns.magicSubTypeColumn.state1.entry.text = @magicTypeDisplay
+columns.magicSubTypeColumn.state1.entry.text = @magicTypeDisplayDummy
 columns.magicSubTypeColumn.state1.sortAttributes = <magicTypeDisplay, text>
 columns.magicSubTypeColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.magicSubTypeColumn.state2.label.text = '$TYPE'
 columns.magicSubTypeColumn.state2.label.arrowDown = true
-columns.magicSubTypeColumn.state2.entry.text = @magicTypeDisplay
+columns.magicSubTypeColumn.state2.entry.text = @magicTypeDisplayDummy
 columns.magicSubTypeColumn.state2.sortAttributes = <magicTypeDisplay, text>
 columns.magicSubTypeColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
@@ -1164,11 +1249,11 @@ views.allItemView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTyp
 views.allItemView.category = <Inventory.FILTERFLAG_INV_ALL, Inventory.FILTERFLAG_CONTAINER_ALL>
 
 views.weaponView.primaryColumn = itemNameColumn
-views.weaponView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, weaponEquippedHandColumn, infoDamageColumn, weaponBaseDamageColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
+views.weaponView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, infoWeaponSchoolColumn, weaponEquippedHandColumn, infoDamageColumn, weaponBaseDamageColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
 views.weaponView.category = <Inventory.FILTERFLAG_INV_WEAPONS, Inventory.FILTERFLAG_CONTAINER_WEAPONS>
 
 views.armorView.primaryColumn = itemNameColumn
-views.armorView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, armorClassColumn, armorRatingColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
+views.armorView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, armorClassColumn, armorSlotsColumn, armorRatingColumn, armorCCWarmthColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
 views.armorView.category = <Inventory.FILTERFLAG_INV_ARMOR, Inventory.FILTERFLAG_CONTAINER_ARMOR>
 
 views.potionView.primaryColumn = potionNameColumn
@@ -1176,7 +1261,7 @@ views.potionView.columns = <equipColumn, potionIconColumn, potionNameColumn, sub
 views.potionView.category = <Inventory.FILTERFLAG_INV_POTIONS, Inventory.FILTERFLAG_CONTAINER_POTIONS>
 
 views.scrollView.primaryColumn = itemNameColumn
-views.scrollView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, miscClassColumn, itemMagnitudeColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
+views.scrollView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, miscClassColumn, infoMiscSchoolColumn, itemMagnitudeColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
 views.scrollView.category = <Inventory.FILTERFLAG_INV_SCROLLS, Inventory.FILTERFLAG_CONTAINER_SCROLLS>
 
 views.foodView.primaryColumn = foodNameColumn
@@ -1188,7 +1273,7 @@ views.ingredientView.columns = <equipColumn, itemIconColumn, itemNameColumn, sub
 views.ingredientView.category = <Inventory.FILTERFLAG_INV_INGREDIENTS, Inventory.FILTERFLAG_CONTAINER_INGREDIENTS>
 
 views.bookView.primaryColumn = itemNameColumn
-views.bookView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, miscClassColumn, itemMagnitudeColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
+views.bookView.columns = <equipColumn, itemIconColumn, itemNameColumn, subTypeColumn, miscClassColumn, infoMiscSchoolColumn, itemWeightColumn, itemTWtColumn, itemValColumn, itemValWtColumn>
 views.bookView.category = <Inventory.FILTERFLAG_INV_BOOKS, Inventory.FILTERFLAG_CONTAINER_BOOKS>
 
 views.keyView.primaryColumn = itemNameColumn
@@ -1324,8 +1409,12 @@ itemCompoundProperties = <sortDataItems, sortDataPotion, sortDataFood>
 compoundProps.sortDataMagic.propertyToSet = 'magicSortingMaster'
 compoundProps.sortDataMagic.concatenateList = <'magicSchool', 'magicClassDisplay', 'magicTypeDisplay', 'subTypeKimari', 'text'>
 
-props.dataMagic.propertiesToSet = <'magicSchool', 'infoSchoolName', 'skillLevel', 'infoCastLevel'>
-props.dataMagic.dataMember1.filter = <'type': Inventory.ICT_SHOUT>
-props.dataMagic.dataMember1.set = <'magicSchool': 7, 'infoSchoolName': '$DispInfoShoutPower'>
+magicCompoundProperties = <sortDataMagic>
 
-magicCompoundProperties = <sortDataMagic, dataMagic>
+
+; Magic Properties -------------------------------------------------------------------------------------------------------------
+props.dataMagic.propertiesToSet = <'magicSchool', 'magicClassDisplayDummy', 'magicTypeDisplayDummy', 'infoSchoolName'>
+props.dataMagic.dataMember1.filter = <'type': Inventory.ICT_SHOUT>
+props.dataMagic.dataMember1.set = <'magicSchool': 7, 'magicClassDisplayDummy': $MagicInfoAbility, 'magicTypeDisplayDummy': $DispInfoShoutPower, 'infoSchoolName': $DispInfoShoutPower>
+
+magicProperties = <dataMagic>
