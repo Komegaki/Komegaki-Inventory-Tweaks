@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="KWD_KIT_SpellLight_Normal_A.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1.1131408"
+     inkscape:cx="199.88487"
+     inkscape:cy="233.12415"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="235"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <path
+     id="path1"
+     style="fill:#a3c5f5;fill-opacity:1;fill-rule:evenodd;stroke-width:39.9609"
+     d="M 255.99806,9.5e-6 196.01173,111.18751 74.97852,74.982431 111.1836,196.01759 10e-6,256.00196 111.0879,315.93946 74.97852,436.69729 195.87891,400.53908 255.99806,511.99999 315.98243,400.81642 437.0176,437.0215 400.81252,315.98829 511.99999,256.00196 400.71875,195.96876 437.0176,74.658212 315.84571,110.90821 Z m 0.002,113.0000005 c 78.97661,-1e-5 143,64.02333 143,143 0,78.97663 -64.02334,143 -143,143 -78.97666,0 -143,-64.02334 -143,-143 0,-78.97665 64.02333,-143.00001 143,-143 z" />
+  <path
+     d="m 362.00001,256.00002 c 0,-58.5422 -47.45785,-106.00001 -106,-106 -58.54219,-1e-5 -106,47.4578 -106,105.99998 0,58.5422 47.45781,106.00001 106,106 58.54219,0 106,-47.4578 106,-105.99998 z"
+     style="display:inline;fill:#a3c5f5;fill-opacity:1;fill-rule:evenodd;stroke-width:42.4003"
+     id="path2" />
+</svg>

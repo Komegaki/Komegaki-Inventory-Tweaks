@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="KWD_ABB_KIT_PowerAbility_AttackNormal_P.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.78710941"
+     inkscape:cx="352.55582"
+     inkscape:cy="303.00743"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1042"
+     inkscape:window-y="235"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <path
+     id="path1"
+     style="fill:#d9c68c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.05778"
+     d="M 38.618399,17.645505 7.9426178,48.321287 106.10668,146.27051 65.911368,186.68066 c -2.396552,2.25604 -4.020131,4.79312 -4.867188,7.61523 -0.987515,4.23116 -0.987515,8.67353 0,13.32617 0.987543,9.30933 5.289108,17.7715 12.904297,25.38672 L 222.4641,84.497068 c -3.66916,-3.809668 -7.47562,-6.769198 -11.42578,-8.884765 -4.51212,-2.541159 -8.88411,-4.090177 -13.11523,-4.65625 -9.02835,-1.834613 -16.15246,-0.21102 -21.3711,4.867187 L 136.9934,115.59473 Z M 291.01293,47.692381 c -14.17397,0.02618 -29.1088,0.615647 -44.82031,1.78125 C 348.47071,105.70784 478.29814,151.29028 365.65356,290.62792 L 468.3684,387.75878 C 545.0317,173.77951 503.62256,47.299747 291.01293,47.692381 Z m -105.15039,99.001959 -48.23242,48.23242 293.92383,293.92968 52.88867,5.49805 -5.92383,-55.0039 z" />
+</svg>

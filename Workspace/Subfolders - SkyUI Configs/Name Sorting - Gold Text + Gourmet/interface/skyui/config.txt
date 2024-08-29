@@ -380,13 +380,13 @@ columns.armorClassColumn.hidden = true
 columns.armorClassColumn.state1.label.text = '$CLASS'
 columns.armorClassColumn.state1.label.arrowDown = false
 columns.armorClassColumn.state1.entry.text = @weightClassDisplay
-columns.armorClassColumn.state1.sortAttributes = <armorClass, text>
+columns.armorClassColumn.state1.sortAttributes = <weightClassDisplay, text>
 columns.armorClassColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.armorClassColumn.state2.label.text = '$CLASS'
 columns.armorClassColumn.state2.label.arrowDown = true
 columns.armorClassColumn.state2.entry.text = @weightClassDisplay
-columns.armorClassColumn.state2.sortAttributes = <armorClass, text>
+columns.armorClassColumn.state2.sortAttributes = <weightClassDisplay, text>
 columns.armorClassColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 
@@ -1180,13 +1180,13 @@ columns.craftArmorClassColumn.hidden = true
 columns.craftArmorClassColumn.state1.label.text = '$CLASS'
 columns.craftArmorClassColumn.state1.label.arrowDown = false
 columns.craftArmorClassColumn.state1.entry.text = @weightClassDisplay
-columns.craftArmorClassColumn.state1.sortAttributes = <armorClass, text>
+columns.craftArmorClassColumn.state1.sortAttributes = <weightClassDisplay, text>
 columns.craftArmorClassColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.craftArmorClassColumn.state2.label.text = '$CLASS'
 columns.craftArmorClassColumn.state2.label.arrowDown = true
 columns.craftArmorClassColumn.state2.entry.text = @weightClassDisplay
-columns.craftArmorClassColumn.state2.sortAttributes = <armorClass, text>
+columns.craftArmorClassColumn.state2.sortAttributes = <weightClassDisplay, text>
 columns.craftArmorClassColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 
