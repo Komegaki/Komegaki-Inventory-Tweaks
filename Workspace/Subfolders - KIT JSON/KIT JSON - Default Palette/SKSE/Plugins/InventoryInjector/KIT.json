@@ -1662,6 +1662,15 @@
             "itemSort": "2"
         }
     },
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccTool" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeTool"
+		}
+	},
     {
 		"match": {
 			"formType": "Armor",
@@ -1746,7 +1755,7 @@
     {
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_ToolCompass" ]
+			"keywords": [ "KIT_Data_TypeAccCompass" ]
 		},
 		"assign": {
 			"subTypeDisplay": "$AccTypeCompass"
@@ -1920,7 +1929,7 @@
 			"keywords": [ "KIT_Data_TypeAccNails" ]
 		},
 		"assign": {
-			"subTypeDisplay": "$AccTypeNail"
+			"subTypeDisplay": "$AccTypeNails"
 		}
 	},
     {
@@ -1948,6 +1957,15 @@
 		},
 		"assign": {
 			"subTypeDisplay": "$AccTypeScabbard"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "KIT_Data_TypeAccScarf" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$AccTypeScarf"
 		}
 	},
     {
@@ -2011,15 +2029,6 @@
 		},
 		"assign": {
 			"subTypeDisplay": "$AccTypeToy"
-		}
-	},
-    {
-		"match": {
-			"formType": "Armor",
-			"keywords": [ "KIT_Data_TypeAccTool" ]
-		},
-		"assign": {
-			"subTypeDisplay": "$AccTypeTool"
 		}
 	},
     {
@@ -2997,6 +3006,7 @@
             "itemClass": "0",
 			"itemSort": "0",
 			"potionSort": "9",
+			"iconLabel": "potion_poison",
 			"iconColor": "#990099"
 		}
 	},
@@ -3424,11 +3434,11 @@
 	{
 		"match": {
 			"formType": "Ingredient",
-			"keywords": [ "KIT_Data_TypeIconBowl" ]
+			"keywords": [ "KIT_Data_TypeIconBowlFull" ]
 		},
 		"assign": {
 			"iconSource": "KIT/Misc.swf",
-			"iconLabel": "misc_bowl",
+			"iconLabel": "misc_bowlfull",
 			"iconColor": "#8f6956"
 		}
 	},
@@ -5173,6 +5183,19 @@
 	{
 		"match": {
 			"formType": "SoulGem",
+			"keywords": [ "KIT_SLGM_TypeVarla05" ]
+		},
+		"assign": {
+			"iconSource": "KIT/Misc.swf",
+			"iconLabel": "soulgem_varla",
+			"iconColor": "#aba3ff",
+			"itemClass": "1",
+			"itemSort": "2"
+		}
+	},
+	{
+		"match": {
+			"formType": "SoulGem",
 			"keywords": [ "KIT_SLGM_TypeGrand05" ]
 		},
 		"assign": {
@@ -5429,7 +5452,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Alteration",
-			"effectKeywords": [ "KIT_MagicEnhanceType_Armor" ]
+			"effectKeywords": [ "KIT_MagicEnhanceType_ArmorNormal" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoEnhance",
@@ -5444,7 +5467,7 @@
 	{
 		"match": {
 			"formType": "Book",
-			"keywords": [ "KIT_MagicEnhanceType_Armor_A" ]
+			"keywords": [ "KIT_MagicEnhanceType_ArmorNormal_A" ]
 		},
 		"assign": {
 			"miscClassDisplay": "$MagicInfoEnhance",
@@ -5455,7 +5478,7 @@
     {
 		"match": {
 			"formType": "Scroll",
-			"keywords": [ "KIT_MagicEnhanceType_Armor_A" ]
+			"keywords": [ "KIT_MagicEnhanceType_ArmorNormal_A" ]
 		},
 		"assign": {
 			"miscClassDisplay": "$MagicInfoEnhance",
@@ -6360,6 +6383,42 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
+			"effectKeywords": [ "KIT_MagicBanishType_Normal" ]
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoUtility",
+			"magicTypeDisplayDummy": "$MagicInfoBanish",
+			"magicClassDisplay": "$MagicInfoUtility",
+			"magicTypeDisplay": "$MagicInfoBanish"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicBanishType_Normal_C" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoUtility",
+			"miscTypeDisplay": "$MagicInfoBanish",
+			"iconColor": "#6a55d5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Scroll",
+			"keywords": [ "KIT_MagicBanishType_Normal_C" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoUtility",
+			"miscTypeDisplay": "$MagicInfoBanish",
+			"iconColor": "#6a55d5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"school": "Conjuration",
 			"effectKeywords": [ "KIT_MagicCMDActorType_Normal" ]
 		},
 		"assign": {
@@ -6384,6 +6443,81 @@
 		"match": {
 			"formType": "Scroll",
 			"keywords": [ "KIT_MagicCMDActorType_Normal_C" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoUtility",
+			"miscTypeDisplay": "$MagicInfoCommand",
+			"iconColor": "#6a55d5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"school": "Conjuration",
+			"effectKeywords": [ "KIT_MagicHealMinionType_Normal" ]
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoUtility",
+			"magicTypeDisplayDummy": "$MagicInfoHealing",
+			"magicClassDisplay": "$MagicInfoUtility",
+			"magicTypeDisplay": "$MagicInfoHealing",
+			"iconColor": "#ecb279"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicHealMinionType_Normal_C" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoUtility",
+			"miscTypeDisplay": "$MagicInfoHealing",
+			"iconColor": "#ecb279"
+		}
+	},
+	{
+		"match": {
+			"formType": "Scroll",
+			"keywords": [ "KIT_MagicHealMinionType_Normal_C" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoUtility",
+			"miscTypeDisplay": "$MagicInfoHealing",
+			"iconColor": "#ecb279"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"school": "Conjuration",
+			"effectKeywords": [ "KIT_MagicTeleportType_Normal" ]
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoUtility",
+			"magicTypeDisplayDummy": "$MagicInfoTeleport",
+			"magicClassDisplay": "$MagicInfoUtility",
+			"magicTypeDisplay": "$MagicInfoTeleport",
+			"iconSource": "KIT/Powers.swf",
+			"iconLabel": "magic_teleport"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicTeleportType_Normal_C" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoUtility",
+			"miscTypeDisplay": "$MagicInfoCommand",
+			"iconColor": "#6a55d5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Scroll",
+			"keywords": [ "KIT_MagicTeleportType_Normal_C" ]
 		},
 		"assign": {
 			"miscClassDisplay": "$MagicInfoUtility",
@@ -7106,7 +7240,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Destruction",
-			"effectKeywords": [ "KIT_MagicEnhanceType_Armor" ]
+			"effectKeywords": [ "KIT_MagicEnhanceType_ArmorNormal" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoEnhance",
@@ -7121,7 +7255,7 @@
 	{
 		"match": {
 			"formType": "Book",
-			"keywords": [ "KIT_MagicEnhanceType_Armor_D" ]
+			"keywords": [ "KIT_MagicEnhanceType_ArmorNormal_D" ]
 		},
 		"assign": {
 			"miscClassDisplay": "$MagicInfoEnhance",
@@ -7132,7 +7266,7 @@
     {
 		"match": {
 			"formType": "Scroll",
-			"keywords": [ "KIT_MagicEnhanceType_Armor_D" ]
+			"keywords": [ "KIT_MagicEnhanceType_ArmorNormal_D" ]
 		},
 		"assign": {
 			"miscClassDisplay": "$MagicInfoEnhance",
@@ -9675,6 +9809,90 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": ["LesserPower", "Power" ] },
+			"effectKeywords": [ "KIT_MagicActionType_TransformVampLord" ]
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoAction",
+			"magicTypeDisplayDummy": "$MagicInfoTransform",
+			"powerClassDisplay": "$MagicInfoAction",
+			"powerTypeDisplay": "$MagicInfoTransform",
+			"iconSource": "KIT/Powers.swf",
+			"iconLabel": "power_vampirelord",
+			"iconColor": "#99192a"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicActionType_TransformVampLord_P" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoAction",
+			"miscTypeDisplay": "$MagicInfoTransform",
+			"iconColor": "#99192a"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": ["LesserPower", "Power" ] },
+			"effectKeywords": [ "KIT_MagicActionType_TransformWerewolf" ]
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoAction",
+			"magicTypeDisplayDummy": "$MagicInfoTransform",
+			"powerClassDisplay": "$MagicInfoAction",
+			"powerTypeDisplay": "$MagicInfoTransform",
+			"iconSource": "KIT/Powers.swf",
+			"iconLabel": "power_transform"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicActionType_TransformWerewolf_P" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoAction",
+			"miscTypeDisplay": "$MagicInfoTransform",
+			"iconColor": "#d9c68c"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": ["LesserPower", "Power" ] },
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicUtilityType_HorseNormal",
+					"KIT_MagicUtilityType_DispelHorseNormal"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoUtility",
+			"magicTypeDisplayDummy": "$MagicInfoAnimalHorse",
+			"powerClassDisplay": "$MagicInfoUtility",
+			"powerTypeDisplay": "$MagicInfoAnimalHorse",
+			"iconSource": "KIT/Powers.swf",
+			"iconLabel": "magic_dodohorse"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicUtilityType_HorseNormal_P" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoUtility",
+			"miscTypeDisplay": "$MagicInfoAnimalHorse",
+			"iconColor": "#d9c68c"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": ["LesserPower", "Power" ] },
 			"effectKeywords": [ "KIT_MagicTeleportType_Normal" ]
 		},
 		"assign": {
@@ -9684,7 +9902,7 @@
 			"powerTypeDisplay": "$MagicInfoTeleport",
 			"iconSource": "KIT/Powers.swf",
 			"iconLabel": "magic_teleport",
-			"iconColor": "#6a55d5"
+			"iconColor": "#d9c68c"
 		}
 	},
 	{
@@ -9695,7 +9913,7 @@
 		"assign": {
 			"miscClassDisplay": "$MagicInfoUtility",
 			"miscTypeDisplay": "$MagicInfoTeleport",
-			"iconColor": "#6a55d5"
+			"iconColor": "#d9c68c"
 		}
 	},
 	{
@@ -9706,7 +9924,7 @@
 		"assign": {
 			"miscClassDisplay": "$MagicInfoUtility",
 			"miscTypeDisplay": "$MagicInfoTeleport",
-			"iconColor": "#6a55d5"
+			"iconColor": "#d9c68c"
 		}
 	},
 	{
@@ -9748,6 +9966,32 @@
 		"assign": {
 			"miscClassDisplay": "$MagicInfoUtility",
 			"miscTypeDisplay": "$MagicInfoSlowTime",
+			"iconColor": "#d9c68c"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": ["LesserPower", "Power" ] },
+			"effectKeywords": [ "KIT_MagicEnhanceType_ArmorNormal" ]
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoEnhance",
+			"magicTypeDisplayDummy": "$MagicInfoArmor",
+			"powerClassDisplay": "$MagicInfoEnhance",
+			"powerTypeDisplay": "$MagicInfoArmor",
+			"iconSource": "KIT/Armor.swf",
+			"iconLabel": "armor_shield"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicEnhanceType_ArmorNormal_P" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoEnhance",
+			"miscTypeDisplay": "$MagicInfoArmor",
 			"iconColor": "#d9c68c"
 		}
 	},
@@ -9842,6 +10086,37 @@
 			"spellType": { "anyOf": ["LesserPower", "Power" ] },
 			"effectKeywords": {
 				"anyOf": [
+					"KIT_MagicEnhanceType_Weapon",
+					"KIT_MagicEnhanceType_DispelWeapon"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoEnhance",
+			"magicTypeDisplayDummy": "$MagicInfoWeapon",
+			"powerClassDisplay": "$MagicInfoEnhance",
+			"powerTypeDisplay": "$MagicInfoWeapon",
+			"iconSource": "KIT/Powers.swf",
+			"iconLabel": "magic_enhanceweapon"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicEnhanceType_Weapon_P" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoEnhance",
+			"miscTypeDisplay": "$MagicInfoWeapon",
+			"iconColor": "#d9c68c"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": ["LesserPower", "Power" ] },
+			"effectKeywords": {
+				"anyOf": [
 					"KIT_MagicEtheralType_Normal",
 					"KIT_MagicEtheralType_DispelNormal"
 				]
@@ -9919,6 +10194,37 @@
 			"miscClassDisplay": "$MagicInfoDefense",
 			"miscTypeDisplay": "$MagicInfoEtheral",
 			"iconColor": "#99192a"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": ["LesserPower", "Power" ] },
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicRestoreType_Health",
+					"KIT_MagicRestoreType_DispelHealth"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoAbility",
+			"magicTypeDisplayDummy": "$MagicInfoHealing",
+			"powerClassDisplay": "$MagicInfoAbility",
+			"powerTypeDisplay": "$MagicInfoHealing",
+			"iconSource": "KIT/Powers.swf",
+			"iconLabel": "magic_healinghands"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicRestoreType_Health_P" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoAbility",
+			"miscTypeDisplay": "$MagicInfoHealing",
+			"iconColor": "#d9c68c"
 		}
 	},
 	{
