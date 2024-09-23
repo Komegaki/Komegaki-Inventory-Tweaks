@@ -1004,6 +1004,20 @@
             "itemSort": "0"
         }
     },
+	{
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Ammo_TypeEnchantedArrow" ]
+        },
+        "assign": {
+            "subTypeDisplay": "$Arrow",
+            "iconSource": "KIT/Weapons.swf",
+            "iconLabel": "ammo_elementalarrow",
+            "itemType": "1",
+            "itemClass": "21",
+            "itemSort": "1"
+        }
+    },
     {
         "match": {
             "formType": "Ammo",
@@ -1150,6 +1164,69 @@
             "itemType": "1",
             "itemClass": "25",
             "itemSort": "0"
+        }
+    },
+	{
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Var_IsColorAedric" ]
+        },
+        "assign": {
+            "iconColor": "#148fb8"
+        }
+    },
+	{
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Var_IsColorBlood" ]
+        },
+        "assign": {
+            "iconColor": "#99192a"
+        }
+    },
+	{
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Var_IsColorFire" ]
+        },
+        "assign": {
+            "iconColor": "#d2902d"
+        }
+    },
+	{
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Var_IsColorFrost" ]
+        },
+        "assign": {
+            "iconColor": "#a3e5f5"
+        }
+    },
+	{
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Var_IsColorPoison" ]
+        },
+        "assign": {
+            "iconColor": "#8abf40"
+        }
+    },
+	{
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Var_IsColorShock" ]
+        },
+        "assign": {
+            "iconColor": "#e9d262"
+        }
+    },
+	{
+        "match": {
+            "formType": "Ammo",
+            "keywords": [ "KIT_Var_IsColorSun" ]
+        },
+        "assign": {
+            "iconColor": "#ecb279"
         }
     },
     {
@@ -2915,8 +2992,8 @@
 		"assign": {
             "subTypeDisplay": "$MagicInfoCombat",
 			"itemClass": "4",
-			"itemSort": "1",
-			"potionSort": "20",
+			"itemSort": "2",
+			"potionSort": "19",
 			"iconSource": "KIT/Potions.swf",
 			"iconLabel": "potion_triangle",
 			"iconColor": "#a3c5f5"
@@ -2942,8 +3019,8 @@
 		"assign": {
             "subTypeDisplay": "$MagicInfoEnhance",
 			"itemClass": "4",
-			"itemSort": "2",
-			"potionSort": "19",
+			"itemSort": "3",
+			"potionSort": "18",
 			"iconSource": "KIT/Potions.swf",
 			"iconLabel": "potion_shield",
 			"iconColor": "#7d3f35"
@@ -2969,8 +3046,8 @@
 		"assign": {
             "subTypeDisplay": "$MagicInfoEnhance",
 			"itemClass": "4",
-			"itemSort": "3",
-			"potionSort": "18",
+			"itemSort": "4",
+			"potionSort": "17",
 			"iconSource": "KIT/Potions.swf",
 			"iconLabel": "potion_enhance",
 			"iconColor": "#d9c68c"
@@ -2996,8 +3073,8 @@
 		"assign": {
             "subTypeDisplay": "$MagicInfoResistanceShort",
 			"itemClass": "4",
-			"itemSort": "4",
-			"potionSort": "17",
+			"itemSort": "5",
+			"potionSort": "16",
 			"iconSource": "KIT/Potions.swf",
 			"iconLabel": "potion_shield",
 			"iconColor": "#d2902d"
@@ -3023,8 +3100,8 @@
 		"assign": {
             "subTypeDisplay": "$MagicInfoResistanceShort",
 			"itemClass": "4",
-			"itemSort": "5",
-			"potionSort": "16",
+			"itemSort": "6",
+			"potionSort": "15",
 			"iconSource": "KIT/Potions.swf",
 			"iconLabel": "potion_shield",
 			"iconColor": "#a3e5f5"
@@ -3050,8 +3127,8 @@
 		"assign": {
             "subTypeDisplay": "$MagicInfoResistanceShort",
 			"itemClass": "4",
-			"itemSort": "6",
-			"potionSort": "15",
+			"itemSort": "7",
+			"potionSort": "14",
 			"iconSource": "KIT/Potions.swf",
 			"iconLabel": "potion_shield",
 			"iconColor": "#e9d262"
@@ -3077,8 +3154,8 @@
 		"assign": {
             "subTypeDisplay": "$MagicInfoResistanceShort",
 			"itemClass": "4",
-			"itemSort": "7",
-			"potionSort": "14",
+			"itemSort": "8",
+			"potionSort": "13",
 			"iconSource": "KIT/Potions.swf",
 			"iconLabel": "potion_shield",
 			"iconColor": "#6a76fb"
@@ -3104,8 +3181,8 @@
 		"assign": {
             "subTypeDisplay": "$MagicInfoResistanceShort",
 			"itemClass": "4",
-			"itemSort": "8",
-			"potionSort": "13",
+			"itemSort": "9",
+			"potionSort": "12",
 			"iconSource": "KIT/Potions.swf",
 			"iconLabel": "potion_shield",
 			"iconColor": "#8ed65c"
@@ -3131,8 +3208,8 @@
 		"assign": {
             "subTypeDisplay": "$MagicInfoUtility",
 			"itemClass": "4",
-			"itemSort": "9",
-			"potionSort": "12",
+			"itemSort": "10",
+			"potionSort": "11",
 			"iconSource": "KIT/Potions.swf",
 			"iconLabel": "potion_square",
 			"iconColor": "#b33441"
@@ -3158,8 +3235,8 @@
 		"assign": {
             "subTypeDisplay": "$MagicInfoUtility",
 			"itemClass": "4",
-			"itemSort": "10",
-			"potionSort": "11",
+			"itemSort": "11",
+			"potionSort": "10",
 			"iconSource": "KIT/Potions.swf",
 			"iconLabel": "potion_square",
 			"iconColor": "#6a55d5"
@@ -3185,8 +3262,8 @@
 		"assign": {
             "subTypeDisplay": "$MagicInfoUtility",
 			"itemClass": "4",
-			"itemSort": "11",
-			"potionSort": "10",
+			"itemSort": "12",
+			"potionSort": "9",
 			"iconSource": "KIT/Potions.swf",
 			"iconLabel": "potion_square",
 			"iconColor": "#a3c5f5"
@@ -3199,9 +3276,9 @@
 		},
 		"assign": {
             "subTypeDisplay": "$MagicInfoSpecial",
-            "itemClass": "0",
-			"itemSort": "0",
-			"potionSort": "50",
+			"itemClass": "4",
+			"itemSort": "1",
+			"potionSort": "20",
             "iconSource": "KIT/Potions.swf",
 			"iconLabel": "potion_special",
 			"iconColor": "#FFCC99"
@@ -3941,6 +4018,17 @@
 	{
 		"match": {
 			"formType": "Ingredient",
+			"keywords": [ "KIT_Data_TypeIconVenomSac" ]
+		},
+		"assign": {
+			"iconSource": "KIT/Alchemy.swf",
+			"iconLabel": "ingredient_venomsac",
+			"iconColor": "#79204d"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
 			"keywords": [ "KIT_Data_TypeIconSoap" ]
 		},
 		"assign": {
@@ -4051,6 +4139,15 @@
 		},
 		"assign": {
 			"iconColor": "#dbaf58"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "KIT_Var_IsColorGreen" ]
+		},
+		"assign": {
+			"iconColor": "#8ed65c"
 		}
 	},
 	{
@@ -7438,7 +7535,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_BattleAxe2H_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_BattleAxe2H" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7454,7 +7551,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_Bow2H_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_Bow2H" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7470,7 +7567,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_Claw1H_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_Claw1H" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7486,7 +7583,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_Dagger1H_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_Dagger1H" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7502,7 +7599,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_Greatsword2H_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_Greatsword2H" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7518,7 +7615,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_Halberd2H_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_Halberd2H" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7534,7 +7631,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_Katana1H_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_Katana1H" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7550,7 +7647,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_Mace1H_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_Mace1H" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7566,7 +7663,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_Pike2H_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_Pike2H" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7582,7 +7679,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_Quarterstaff2H_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_Quarterstaff2H" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7598,7 +7695,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_Rapier1H_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_Rapier1H" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7614,7 +7711,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_ShieldH_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_ShieldH" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7630,7 +7727,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_ShieldL_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_ShieldL" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7646,7 +7743,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_Sword1H_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_Sword1H" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7662,7 +7759,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_WarAxe1H_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_WarAxe1H" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7678,7 +7775,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_Warhammer2H_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_Warhammer2H" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -7694,7 +7791,7 @@
 			"formType": "Spell",
 			"spellType": "Spell",
 			"school": "Conjuration",
-			"effectKeywords": [ "KIT_MagicBoundType_Whip1H_Normal" ]
+			"effectKeywords": [ "KIT_MagicBoundType_Whip1H" ]
 		},
 		"assign": {
 			"magicClassDisplayDummy": "$MagicInfoSummon",
@@ -9644,6 +9741,94 @@
 			"school": "Illusion",
 			"effectKeywords": {
 				"anyOf": [
+					"KIT_MagicEnhanceType_Sight",
+					"KIT_MagicEnhanceType_DispelSight"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoEnhance",
+			"magicTypeDisplayDummy": "$MagicInfoSight",
+			"magicClassDisplay": "$MagicInfoEnhance",
+			"magicTypeDisplay": "$MagicInfoSight",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_sight",
+			"iconColor": "#a3c5f5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicEnhanceType_Sight_I" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoEnhance",
+			"miscTypeDisplay": "$MagicInfoSight",
+			"iconColor": "#a3c5f5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Scroll",
+			"keywords": [ "KIT_MagicEnhanceType_Sight_I" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoEnhance",
+			"miscTypeDisplay": "$MagicInfoSight",
+			"iconColor": "#a3c5f5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"school": "Illusion",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicEnhanceType_SightVampiric",
+					"KIT_MagicEnhanceType_DispelSightVampiric"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoEnhance",
+			"magicTypeDisplayDummy": "$MagicInfoSight",
+			"magicClassDisplay": "$MagicInfoEnhance",
+			"magicTypeDisplay": "$MagicInfoSight",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_sight",
+			"iconColor": "#99192a"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicEnhanceType_SightVampiric_I" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoEnhance",
+			"miscTypeDisplay": "$MagicInfoSight",
+			"iconColor": "#99192a"
+		}
+	},
+	{
+		"match": {
+			"formType": "Scroll",
+			"keywords": [ "KIT_MagicEnhanceType_SightVampiric_I" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoEnhance",
+			"miscTypeDisplay": "$MagicInfoSight",
+			"iconColor": "#99192a"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"school": "Illusion",
+			"effectKeywords": {
+				"anyOf": [
 					"KIT_MagicEnhanceType_Sneak",
 					"KIT_MagicEnhanceType_DispelSneak"
 				]
@@ -9679,6 +9864,50 @@
 			"miscClassDisplay": "$MagicInfoEnhance",
 			"miscTypeDisplay": "$MagicInfoSneak",
 			"iconColor": "#6a55d5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"school": "Illusion",
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicEnhanceType_SneakVampiric",
+					"KIT_MagicEnhanceType_DispelSneakVampiric"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoEnhance",
+			"magicTypeDisplayDummy": "$MagicInfoSneak",
+			"magicClassDisplay": "$MagicInfoEnhance",
+			"magicTypeDisplay": "$MagicInfoSneak",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_etheral",
+			"iconColor": "#99192a"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicEnhanceType_SneakVampiric_I" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoEnhance",
+			"miscTypeDisplay": "$MagicInfoSneak",
+			"iconColor": "#99192a"
+		}
+	},
+	{
+		"match": {
+			"formType": "Scroll",
+			"keywords": [ "KIT_MagicEnhanceType_SneakVampiric_I" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoEnhance",
+			"miscTypeDisplay": "$MagicInfoSneak",
+			"iconColor": "#99192a"
 		}
 	},
 	{
@@ -11165,6 +11394,68 @@
 		"assign": {
 			"miscClassDisplay": "$MagicInfoEnhance",
 			"miscTypeDisplay": "$MagicInfoArmor",
+			"iconColor": "#d9c68c"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": ["LesserPower", "Power" ] },
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicEnhanceType_Sight",
+					"KIT_MagicEnhanceType_DispelSight"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoEnhance",
+			"magicTypeDisplayDummy": "$MagicInfoSight",
+			"powerClassDisplay": "$MagicInfoEnhance",
+			"powerTypeDisplay": "$MagicInfoSight",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_sight"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicEnhanceType_Sight_P" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoEnhance",
+			"miscTypeDisplay": "$MagicInfoSight",
+			"iconColor": "#d9c68c"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": ["LesserPower", "Power" ] },
+			"effectKeywords": {
+				"anyOf": [
+					"KIT_MagicEnhanceType_SightVampiric",
+					"KIT_MagicEnhanceType_DispelSightVampiric"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplayDummy": "$MagicInfoEnhance",
+			"magicTypeDisplayDummy": "$MagicInfoSight",
+			"powerClassDisplay": "$MagicInfoEnhance",
+			"powerTypeDisplay": "$MagicInfoSight",
+			"iconSource": "KIT/Spells.swf",
+			"iconLabel": "magic_sight"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "KIT_MagicEnhanceType_SightVampiric_P" ]
+		},
+		"assign": {
+			"miscClassDisplay": "$MagicInfoEnhance",
+			"miscTypeDisplay": "$MagicInfoSight",
 			"iconColor": "#d9c68c"
 		}
 	},

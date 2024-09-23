@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="KWD_KIT_Ammo_EnchantedArrowPoison.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1"
+     inkscape:cx="245.5"
+     inkscape:cy="221.5"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1042"
+     inkscape:window-y="235"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <path
+     id="path1-6"
+     style="display:inline;fill:#8abf40;stroke-width:0.718176;fill-opacity:1"
+     inkscape:label="Arrow"
+     d="M 62.785156 51.1875 C 58.997906 51.171148 55.148477 51.185735 51.232422 51.232422 C 48.244451 301.85998 176.30438 286.59763 186.38477 273.65234 C 133.49317 268.08567 77.188022 155.9382 79.076172 106.61328 C 73.481382 92.311187 67.638668 78.144653 63.382812 63.384766 C 78.1427 67.64062 92.311187 73.481382 106.61328 79.076172 C 155.93821 77.188023 268.08567 133.49511 273.65234 186.38672 C 286.39536 176.46383 301.38191 52.217673 62.785156 51.1875 z M 72.152344 72.152344 L 118.05273 190.56836 L 137.47852 162.41797 L 288.04297 312.98242 L 294.54297 362.64258 L 371.35156 439.84766 L 365.17578 365.19336 L 365.19336 365.19336 L 365.19336 365.17578 L 439.84766 371.35156 L 362.64258 294.54297 L 312.98242 288.04297 L 162.41797 137.47852 L 190.57031 118.05078 L 72.152344 72.152344 z " />
+</svg>
