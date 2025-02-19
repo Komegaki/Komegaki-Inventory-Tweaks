@@ -5,8 +5,8 @@
    width="512"
    version="1.1"
    id="svg1"
-   sodipodi:docname="KIT_SpellEnhanceType_SightVampiric_I.svg"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="KWD_KIT_SpellEnhanceType_SightVampiric_I.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,12 +23,12 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.5742187"
-     inkscape:cx="249.01241"
-     inkscape:cy="247.42433"
+     inkscape:cx="249.33003"
+     inkscape:cy="248.05956"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
-     inkscape:window-x="1042"
-     inkscape:window-y="235"
+     inkscape:window-x="1072"
+     inkscape:window-y="457"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg1" />
   <path
@@ -36,5 +36,5 @@
      fill="#931826"
      stroke-width=".842036"
      id="path1"
-     style="fill:#99192a;fill-opacity:1" />
+     style="fill:#a3c5f5;fill-opacity:1" />
 </svg>
