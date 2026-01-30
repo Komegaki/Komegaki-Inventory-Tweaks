@@ -42,11 +42,11 @@ icons.item.noColor = false
 icons.item.showStolen = true
 
 colors.text.enabled = 0xffcc99
-colors.stolen.enabled = 0xffffff
-colors.negative.enabled = 0xff0000
+colors.stolen.enabled = 0xffcc99
+colors.negative.enabled = 0xee0000
 colors.text.disabled = 0x4c4c4c
 colors.stolen.disabled = 0x4c4c4c
-colors.negative.disabled = 0x800000
+colors.negative.disabled = 0x700000
 
 
 ; =====================================================================================================================
